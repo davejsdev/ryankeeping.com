@@ -1,17 +1,18 @@
 ---
 layout: ../layouts/Layout.astro
-title: Nice Tat Astro Template
+
+content:
+    links:
+        - title: Ryan's Cross-Canada Run (GoFundMe)
+          url: https://www.gofundme.com/f/ryans-crosscanada-run
+        - title: YouTube Channel
+          url: https://www.instagram.com/ryan.keeping/
+        - title: Instagram
+          url: https://www.instagram.com/ryan.keeping/
 ---
-<!-- Markdown Preview - https://dillinger.io/ -->
 
-# Nice Tat Astro Template
+# Ryan Keeping
 
-[youtube](https://www.youtube.com/watch?v=sEyHnHjhlr4)
+## Ultramarathon runner from Halifax, Nova Scotia.
 
-[instagram](https://www.instagram.com/caseyneistat/)
-
-[onlyfans](/onlyfans)
-
-[twitter](https://twitter.com/Casey)
-
-[contact](/contact)
+On April 1st, 2024 I will be running across Canada in under 100 Days. 75KM a day for 99 days. 🇨🇦 🏃🏼

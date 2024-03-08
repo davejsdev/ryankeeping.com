@@ -17,7 +17,6 @@ Great for a LinkInBio type site or just a placeholder while you work on getting 
 ## 🌟 Features
 - ✅ One-Click Deploy to Netlify or Vercel
 - ✅ Markdown for Easy Edits
-- ✅ TailwindCSS for Easy Styling
 - 🌙 Dark Mode for Night Owls
 - 🔄 Page Transitions for Smooth Navigation
 - 🌐 SEO-friendly Out of the Box
@@ -27,7 +26,6 @@ Great for a LinkInBio type site or just a placeholder while you work on getting 
 
 ## 🛠 The Stack
 - Astro
-- Tailwind
 - HTML
 - Markdown
 
