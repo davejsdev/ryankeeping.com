@@ -1,7 +1,7 @@
 ---
 import { fade, ViewTransitions } from 'astro:transitions'
 
-import { SITE_NAME, DESCRIPTION } from '../../src/config'
+import { SITE_NAME, DESCRIPTION, SHARE_IMAGE } from '../../src/config'
 
 interface Props {
 	title: string;
@@ -27,6 +27,7 @@ const links	= frontmatter.content.links as { title: string; url: string }[]
 >
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="image" property="og:image" content={ SHARE_IMAGE }>
 		<meta name="description" content={ DESCRIPTION } />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />

@@ -6,7 +6,7 @@ content:
         - title: Ryan's Cross-Canada Run (GoFundMe)
           url: https://www.gofundme.com/f/ryans-crosscanada-run
         - title: YouTube Channel
-          url: https://www.instagram.com/ryan.keeping/
+          url: https://www.youtube.com/@ryan.keeping
         - title: Instagram
           url: https://www.instagram.com/ryan.keeping/
 ---

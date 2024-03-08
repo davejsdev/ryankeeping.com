@@ -1,6 +1,5 @@
+export const SITE_NAME = 'Ryan Keeping | Ultramarathon runner'
 
+export const DESCRIPTION = 'Ultramarathon runner from Halifax, Nova Scotia.'
 
-export const SITE_NAME = 'Ryan Keeping'
-
-
-export const DESCRIPTION = 'Ultra-marathon runner.'
+export const SHARE_IMAGE = '/ryan-keeping-social-image.webp'
