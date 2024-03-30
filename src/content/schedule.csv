@@ -1,0 +1,99 @@
+day,date,distance,location
+1,2024-04-01,75,Terry Fox Memorial - Ocean Pond
+2,2024-04-02,150,Ocean Pond - Come by Chance
+3,2024-04-03,225,Come by Chance - Port Blandford-Muddy Brook
+4,2024-04-04,300,Port Blandford-Muddy Brook - Butts/Gambo
+5,2024-04-05,375,Butts/Gambo - Notre Dame Junction
+6,2024-04-06,450,Notre Dame Junction - Badger
+7,2024-04-07,525,Badger - South Brook
+8,2024-04-08,600,South Brook - Flight's Brook
+9,2024-04-09,675,Flight's Brook - Pasadena (Going through Deer Lake)
+10,2024-04-10,750,Pasadena - Mattis Point (Going through Corner Brook)
+11,2024-04-11,825,Mattis Point - Codroy Pond (last stop before ferry)
+12,2024-04-12,900,Codroy Pond - Ferry (goodbye NL)
+13,2024-04-13,975,Sydney Ferry Terminal - Saint Patricks Channel
+14,2024-04-14,1050,Saint Patricks Channel - Aulds Cove (just past causeway)
+15,2024-04-15,1125,Aulds Cove - Kenzieville
+16,2024-04-16,1200,Kenzieville - Truro (Valley Cross Roads)
+17,2024-04-17,1275,Truro - Halifax Airport (KMs to be added past Truro)
+18,2024-04-18,1350,Halifax Airport - Halifax (Hometown day)
+19,2024-04-19,1425,Truro + 150kms = Calhoun - Lower Ridge (go through Moncton)
+20,2024-04-20,1500,Lower Ridge - Upper Gagetown
+21,2024-04-21,1575,Upper Gagetown - Longs Creek
+22,2024-04-22,1650,Longs Creek - Waterville (stop in Woodstock for supplies)
+23,2024-04-23,1725,Waterville - Four Falls
+24,2024-04-24,1800,Four Falls - Davis Mill
+25,2024-04-25,1875,Davis Mill - Saint-Louis-du-Ha!Ha!
+26,2024-04-26,1950,Saint-Louis-du-Ha!Ha! - Saint-Andre-Station
+27,2024-04-27,2025,Saint-Andre-Station - Saint-Aubert (approaching Quebec City)
+28,2024-04-28,2100,Saint-Aubert - Beaumont (Basically Quebec City)
+29,2024-04-29,2175,Beaumont - Villeroy (run through Quebec City)
+30,2024-04-30,2250,Villeroy - Drummondville
+31,2024-05-01,2325,Drummondville - Beloeil (right outside of MTL)
+32,2024-05-02,2400,Beloeil - L'Ile-Perrot (run through MTL)
+33,2024-05-03,2475,L'Ile-Perrot - Cornwall
+34,2024-05-04,2550,Cornwall - Johnstown
+35,2024-05-05,2625,Johnstown - Cheeseborough
+36,2024-05-06,2700,Cheeseborough - Marysville
+37,2024-05-07,2775,Marysville - Colborne
+38,2024-05-08,2850,Colborne - Oshawa
+39,2024-05-09,2925,Oshawa - Toronto (run around city + drive 17km out of town next day)
+40,2024-05-10,3000,Cloverdale Mall - Inisfil Heights
+41,2024-05-11,3075,Inisfil Heights - South Bay
+42,2024-05-12,3150,South Bay - Nobel
+43,2024-05-13,3225,Nobel - Wanikewin
+44,2024-05-14,3300,Wanikewin - Sudbury
+45,2024-05-15,3375,Sudbury - Massey
+46,2024-05-16,3450,Massey - Blind River
+47,2024-05-17,3525,Blind River - Bruce Mines
+48,2024-05-18,3600,Bruce Mines - Sault Ste. Marie
+49,2024-05-19,3675,Sault Ste. Marie - Pancake Bay Provincial Park
+50,2024-05-20,3750,Pancake Bay Provincial Park - Orphan Lake Trailhead
+51,2024-05-21,3825,Orphan Lake Trailhead - Helen Junction
+52,2024-05-22,3900,Helen Junction - White River
+53,2024-05-23,3975,White River - Pringle
+54,2024-05-24,4050,Pringle - Jack Fish
+55,2024-05-25,4125,Jack Fish - Pays Plat
+56,2024-05-26,4200,Pays Plat - Red Rock
+57,2024-05-27,4275,Red Rock - Mackenzie (Almost Thunder Bay)
+58,2024-05-28,4350,Mackenzie - Shabaqua Corners (Terry Fox statue day)
+59,2024-05-29,4425,Shabaqua Corners - Upsala
+60,2024-05-30,4500,Upsala - Martin
+61,2024-05-31,4575,Martin - Borups Corners
+62,2024-06-01,4650,Borups Corners - Minnitaki
+63,2024-06-02,4725,Minnitaki - Willard Lake
+64,2024-06-03,4800,Willard Lake - Granite Lake
+65,2024-06-04,4875,Granite Lake - Prawda
+66,2024-06-05,4950,Prawda - Deacons Corner (Basically Winnipeg)
+67,2024-06-06,5025,Deacons Corner - Dacotah (Run past Winnipeg)
+68,2024-06-07,5100,Dacotah - Caye
+69,2024-06-08,5175,Caye - Douglas
+70,2024-06-09,5250,Douglas - Oak Lake
+71,2024-06-10,5325,Oak Lake - Fleming
+72,2024-06-11,5400,Fleming - Percival
+73,2024-06-12,5475,Percival - Sintaluta
+74,2024-06-13,5550,Sintaluta - Regina
+75,2024-06-14,5625,Regina - Moose Jaw
+76,2024-06-15,5700,Moose Jaw - Secretan
+77,2024-06-16,5775,Secretan - Rush Lake
+78,2024-06-17,5850,Rush Lake - Antelope
+79,2024-06-18,5925,Antelope - Hay Lake/Maple Creek
+80,2024-06-19,6000,Hay Lake/Maple Creek - Irvine
+81,2024-06-20,6075,Irvine - Ralston
+82,2024-06-21,6150,Ralston - Southesk
+83,2024-06-22,6225,Southesk - Gleichen
+84,2024-06-23,6300,Gleichen - Calgary
+85,2024-06-24,6375,Calgary - Morley (run through Calgary)
+86,2024-06-25,6450,Morley - Sawback
+87,2024-06-26,6525,Sawback - Field
+88,2024-06-27,6600,Field - Forde
+89,2024-06-28,6675,Forde - Glacier
+90,2024-06-29,6750,Glacier - Three Valley Gap
+91,2024-06-30,6825,Three Valley Gap - South Canoe
+92,2024-07-01,6900,South Canoe - Pritchard
+93,2024-07-02,6975,Pritchard - Lac Le Jeune
+94,2024-07-03,7050,Lac Le Jeune - Kingsvale
+95,2024-07-04,7125,Kingsvale - Othello
+96,2024-07-05,7200,Othello - Barrowtown
+97,2024-07-06,7275,Barrowtown - Surrey
+98,2024-07-07,7350,Surrey - FINISH (run to ferry - take ferry and finish run)

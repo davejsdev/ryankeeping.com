@@ -8,17 +8,15 @@ interface Props {
 }
 
 // @ts-ignore - TODO figure otu type safety on this
-const { frontmatter } = Astro.props
+// const { frontmatter } = Astro.props
 
-const isHome = Astro.url.pathname === '/'
+// const isHome = Astro.url.pathname === '/'
 
-const pageTitle = [
-	frontmatter.title ? frontmatter.title : undefined,
-	isHome ? SITE_NAME : undefined,
-].filter(Boolean).join(' | ')
+// const pageTitle = [
+// 	frontmatter.title ? frontmatter.title : undefined,
+// 	isHome ? SITE_NAME : undefined,
+// ].filter(Boolean).join(' | ')
 
-const links	= frontmatter.content.links as { title: string; url: string }[]
-const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 ---
 
 <!doctype html>
@@ -33,33 +31,26 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{ pageTitle }</title>
+		<title>{ 'pageTitle' }</title>
 		<Amplitude apiKey="79bc9714968c39042ba3ec00ed5f0ed9" />
 		<ViewTransitions />
 	</head>
 	<body>
 		<div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="/schedule" class="nav-link">Schedule</a>
+                    </li>
+            </nav>
 			<main>
 				<slot />
-				{links && (
-					<ul class="link-list">
-						{links.map((link, i) => (
-							<li class="link-item">
-								<a class="link" href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
-							</li>
-						))}
-					</ul>
-				)}
-				<hr />
-				{links && (
-					<ul class="link-list">
-						{navLinks.map((link) => (
-							<li class="link-item">
-								<a class="link" href={link.url}>{link.title}</a>
-							</li>
-						))}
-					</ul>
-				)}
 			</main>
 			
 			<footer>
@@ -88,11 +79,6 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 		background: rgb(var(--background-color));
 		margin: 0;
 		box-sizing: border-box;
-
-		background-image: url('/ryan-keeping-background.jpeg');
-		background-blend-mode: overlay;
-		background-size: cover;
-		background-position: top center;
 	}
 
 	*, *:before, *:after {
@@ -110,7 +96,7 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 	.container {
 		display: grid;
 		min-height: 100vh;
-		max-width: 600px;
+		max-width: 800px;
 		margin: auto;
 		padding: 2rem 1rem;
 		gap: 1rem;
@@ -119,11 +105,9 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 
 	main {
 		display: grid;
-		padding-top: max(4rem, 10vw);
-		gap: 1rem;
+		gap: 0rem;
 		align-items: start;
 		align-content: center;
-		text-align: center;
 	}
 
 	footer {
@@ -133,23 +117,40 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 	}
 
 	h1, h2 {
-		text-align: center;
 		margin: 0;
 	}
 
-	h2 {
-		font-style: italic;
-		font-size: 1.25rem;
-	}
-
-	.link-list {
+	.nav-menu {
 		list-style: none;
 		padding: 0;
-		display: grid;
+		display: flex;
 		gap: 1rem;
 	}
 
-	.link {
+	.nav-link {
+		font-weight: 600;
+		font-size: 1.2rem;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		background-color: rgba(var(--accent), 0.9);
+		padding: 0.25em 0.5em;
+		transition: background-color 0.2s ease-in-out;
+
+		&:focus {
+			outline: 1px solid rgb(var(--text-color));
+			outline-offset: 2px;
+		}
+
+		&:hover {
+			background-color: rgba(var(--accent), 1);
+		}
+
+	}
+
+    .link {
+        max-width: 400px;
 		border-radius: 5px;
 		font-weight: 600;
 		font-size: 1.2rem;
@@ -157,6 +158,7 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 		color: #fff;
 		text-decoration: none;
 		display: block;
+        margin: 2rem 0;
 		background-color: rgba(var(--accent), 0.9);
 		padding: 1em 2em;
 		transition: background-color 0.2s ease-in-out;

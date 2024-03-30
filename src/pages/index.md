@@ -2,13 +2,20 @@
 layout: ../layouts/Layout.astro
 
 content:
-    links:
-        - title: Ryan's Cross-Canada Run (GoFundMe)
-          url: https://www.gofundme.com/f/ryans-crosscanada-run
-        - title: YouTube Channel
-          url: https://www.youtube.com/@ryan.keeping
-        - title: Instagram
-          url: https://www.instagram.com/ryan.keeping/
+  links:
+    - title: Fund My Run! (GoFundMe)
+      url: https://www.gofundme.com/f/ryans-crosscanada-run
+    - title: YouTube Channel
+      url: https://www.youtube.com/@ryan.keeping
+    - title: Instagram
+      url: https://www.instagram.com/ryan.keeping/
+    - title: TikTok
+      url: https://www.tiktok.com/@ryankeeping
+  nav:
+    - title: About The Run
+      url: /about
+    - title: Schedule
+      url: /schedule
 ---
 
 # Ryan Keeping
