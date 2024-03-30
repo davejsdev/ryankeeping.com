@@ -10,7 +10,7 @@ interface Props {
 // @ts-ignore - TODO figure otu type safety on this
 const { frontmatter, title } = Astro.props
 
-const pageTitle = title || frontmatter?.title
+const pageTitle = (title || frontmatter?.title) + ' | ' + 'Ryan Keeping'
 
 ---
 
