@@ -1,6 +1,5 @@
 ---
 import { fade, ViewTransitions } from 'astro:transitions'
-import { Amplitude } from 'astro-analytics'
 import { SITE_NAME, DESCRIPTION, SHARE_IMAGE } from '../../src/config'
 
 interface Props {
@@ -34,7 +33,6 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string }[]
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{ pageTitle }</title>
-		<Amplitude apiKey="79bc9714968c39042ba3ec00ed5f0ed9" />
 		<ViewTransitions />
 	</head>
 	<body>
