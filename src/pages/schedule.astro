@@ -38,51 +38,64 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
 <Layout title='Schedule'>
 
     <h1>Schedule</h1>
-    <div>
-
-        <p>
-            Here's where I'll be on each day of the run.
-        </p>
+    <div style="display: grid">
         <p>
             If you're interested in running with me, please reach out to me on social media. I'd love 
             to have you join me for a few kilometers!
         </p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Date</th>
-                    <th>Total Distance</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                {results.map((row) => (
+        <div class="scrollable-table">
+            <table>
+                <thead>
                     <tr>
-                        <td>{row.day}</td>
-                        <td>{formatDate(row.date)}</td>
-                        <td>{formatDistance(row.distance)}</td>
-                        <td>{row.location}</td>
+                        <th>Day</th>
+                        <th>Date</th>
+                        <th>Total Distance</th>
+                        <th>Location</th>
                     </tr>
-                ))}
-        </tbody>
-    </table>
-</div>
+                </thead>
+                <tbody>
+                    {results.map((row) => (
+                        <tr>
+                            <td>{row.day}</td>
+                            <td>{formatDate(row.date)}</td>
+                            <td>{formatDistance(row.distance)}</td>
+                            <td>{row.location}</td>
+                            </tr>
+                            ))}
+                </tbody>
+            </table>
+        </div>
+    </div>
   <style>
-      table {
+
+    .scrollable-table {
+        display: grid;
+        overflow-x: auto;
+        padding: 1rem 0;
+    }
+    table {
       width: 100%;
+      /* width: max-content; */
       border-collapse: collapse;
     }
 
     th {
         text-transform: uppercase;
         font-size: 0.8rem;
-        text-align-last: left;
+        text-align: left;
+    }
+
+    thead {
+      background-color: rgb(var(--text-color), 0.1);
     }
 
     th, td {
       border-top: 1px solid rgb(var(--text-color), 0.2);
-      padding: 0.5rem;
+      padding: 0.75rem 0.5rem;
+    }
+
+    td {
+        white-space: nowrap;
     }
   </style>
 </Layout>
