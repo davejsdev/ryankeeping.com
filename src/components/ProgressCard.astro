@@ -33,7 +33,7 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
         <header>
             <h2 class="title">{title}</h2>
             <a href={href} target="_blank" rel="noopener noreferrer">
-                <Image class="icon" src={icon.src} alt={icon.alt} />
+                <Image class="icon" src={icon.src} alt={icon.alt} inferSize />
             </a>
         </header>
         {description && <p class="description">{description}</p>}
@@ -43,7 +43,7 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
                 <div class="progress-bar--inner"></div>
             </div>
         </div>
-        <a href={href}>
+        <a href={href} target="_blank" rel="noopener noreferrer">
             {cta}
         </a>
     </section>
