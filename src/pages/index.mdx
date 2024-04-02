@@ -1,0 +1,63 @@
+---
+layout: ../layouts/Layout.astro
+
+content:
+  links:
+    - title: Instagram
+      url: https://www.instagram.com/ryan.keeping/
+      icon: instagram-logo.svg
+    - title: YouTube
+      url: https://www.youtube.com/@ryan.keeping
+      icon: youtube-logo.svg
+    - title: TikTok
+      url: https://www.tiktok.com/@ryankeeping
+      icon: tiktok-logo.svg
+    - title: Facebook
+      url: https://www.facebook.com/profile.php?id=100086981121661
+      icon: facebook-logo.svg
+  nav:
+    - title: About The Run
+      url: /about
+    - title: Schedule
+      url: /schedule
+---
+
+import ProgressCard from '../components/ProgressCard.astro';
+import GoFundMeLogo from '../assets/gofundme-logo.svg';
+import StravaLogo from '../assets/strava-logo.svg';
+import {Image} from 'astro:assets'
+
+<Image class="profile-image" src="/ryan-keeping-profile.jpg" alt="man running" height={100} width={100}  />
+
+# Ryan Keeping
+
+## Ultramarathon runner from Halifax, Nova Scotia.
+
+On April 1st, 2024 I started running across Canada. I'll be running 75KM a day for 99 days. 🇨🇦 🏃🏼
+
+<ProgressCard
+  title="Ryan's Cross-Canada Run"
+  icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
+  description='Help fund my run and support the Heart & Stroke Foundation.'
+  progress={{
+    current: 8755,
+    total: 100000,
+    unit: "CAD"
+  }}
+  cta="Donate Now"
+  href='https://www.gofundme.com/f/ryans-crosscanada-run'
+  color="#02A95C"
+  />
+<ProgressCard
+  title="Distance Travelled"
+  icon={{ src: StravaLogo, alt:"Strava" }}
+  description='75 kilometers a day for 99 days.'
+  progress={{
+    current: 75,
+    total: 7386,
+    unit: "kilometers"
+  }}
+  cta="Follow my progress"
+  href='https://www.strava.com/athletes/52922322'
+  color="#FC6100"
+  />

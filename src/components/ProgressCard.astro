@@ -1,0 +1,120 @@
+---
+import { Image } from 'astro:assets';
+import { formatDistance, formatDollars } from '../util/format';
+import Card from './Card.astro';
+
+
+interface Props {
+	title: string;
+	description: string;
+	icon: {
+        src: string;
+        alt: string;
+    };
+    href: string;
+    cta: string;
+    color: string; 
+    progress: {
+        current: number;
+        total: number;
+        unit: string;
+    };
+}
+
+const { href, title, description, icon, cta, color, progress } = Astro.props;
+
+const formatter = progress.unit === 'CAD' ? formatDollars : formatDistance;
+
+const formattedProgress = `${formatter(progress.current)} / ${formatter(progress.total)}`;
+---
+
+<Card>
+<section class="progress-card" style={`--card-color: ${color}; --progress: ${progress.current / progress.total * 100}`}>
+        <header>
+            <h2 class="title">{title}</h2>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+                <Image class="icon" src={icon.src} alt={icon.alt} />
+            </a>
+        </header>
+        {description && <p class="description">{description}</p>}
+        <div class="progress">
+            <p class="progress-label">{formattedProgress}</p>
+            <div class="progress-bar">
+                <div class="progress-bar--inner"></div>
+            </div>
+        </div>
+        <a href={href}>
+            {cta}
+        </a>
+    </section>
+</Card>
+<style>
+	.progress-card {
+		display: grid;
+		padding: 2rem;
+		background-color: #fff;
+		border-radius: 0.5rem;
+        text-align: left;
+        gap: 1rem;
+        color: #000;
+
+        header {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .icon {
+            width: 50px;
+        }
+	}
+
+   
+	.progress-card > a {
+		text-decoration: none;
+		line-height: 1.4;
+        font-size: 0.8rem;
+		padding: 1.5em;
+		border-radius: 0.25rem;
+		color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+		background-color: var(--card-color, #222);
+	}
+
+	.title {
+		margin: 0;
+		font-size: 1.25rem;
+        font-style: normal;
+        text-align: left;
+	}
+	p {
+		margin: 0;
+	}
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .progress-label {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .progress-bar {
+        height: 5px;
+        background-color: #0002;
+        border-radius: 5px;
+    }
+
+    .progress-bar--inner {
+        height: 100%;
+        width: calc(var(--progress) * 1%);
+        background-color: var(--card-color, #222);
+        border-radius: inherit;
+    }
+</style>
