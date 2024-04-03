@@ -37,13 +37,19 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
 
 <Layout title="Schedule">
 
-    <h1>Schedule</h1>
-    <div style="display: grid">
-        <p>
-            If you're interested in running with me, please reach out to me on social media. I'd love 
-            to have you join me for a few kilometers!
-        </p>
-        <div class="scrollable-table">
+  <!-- <div style="display: grid; gap: 0.5rem"> -->
+      <h1>Route</h1>
+      <p>
+          If you're interested in running with me, please reach out to me on social media. I'd love 
+          to have you join me for a few kilometers!
+      </p>
+      <iframe src="https://www.google.com/maps/d/embed?mid=12UZNrnrmQcCb24rqpwa1s5vwLpSNGuQ&ehbc=2E312F" width="100%" height="480px"></iframe>
+      <p style="font-size: 0.8rem; font-style: italic">
+        Note: Not all locations are marked on the map. Please refer to the schedule below for more details.
+      </p>
+      <br />
+      <h2>Schedule</h2> 
+      <div class="scrollable-table">
             <table>
                 <thead>
                     <tr>
@@ -65,7 +71,7 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
                 </tbody>
             </table>
         </div>
-    </div>
+    <!-- </div> -->
   <style>
 
     .scrollable-table {
