@@ -95,20 +95,13 @@ const pageTitle = (title || frontmatter?.title) + ' | ' + 'Ryan Keeping'
 		box-sizing: inherit;
 	}
 
-	/* Light mode */
-	@media (prefers-color-scheme: light) {
-		:root {
-			--text-color: 0, 0, 0;
-			--background-color: 225, 225, 225;
-		}
-	}
-
 	.container {
 		display: grid;
 		min-height: 100vh;
 		max-width: 840px;
 		margin: auto;
 		padding: 2rem 1rem;
+		padding-top: 5rem;
 		gap: 2rem;
 		grid-template-rows: 1fr auto;
 	}

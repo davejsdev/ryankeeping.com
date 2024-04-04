@@ -1,43 +1,52 @@
 ---
-import Card from "./Card.astro";
-
 
 ---
 <nav>
+    <div>
+        <a href="/" class="nav-link title">
+            Ryan Keeping
+        </a>
+    </div>
     <ul class="nav-menu">
         <li>
-            <a href="/" class="nav-link">
-                <Card>
-                    Home
-                </Card>
-            </a>
-        </li>
-        <li>
             <a href="/about" class="nav-link">
-                <Card>
+  
 
                     About
-                </Card>
+      
             </a>
         </li>
         <li>
             <a href="/route" class="nav-link">
-                <Card>
-
+   
                     Route
-                </Card>
+      
             </a>
         </li>
 </nav>
 
 <style>
+    nav {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f5f5ee;
+        box-shadow: 0 0 1rem #0002;
+        backdrop-filter: blur(2px);
+        padding: 0 0.75rem;
+        border-top: 5px solid rgb(var(--background-color));
+    }
+
+    
     .nav-menu {
+        display: flex;
 		list-style: none;
 		padding: 0;
-		display: flex;
-		gap: 1rem;
-        margin: auto;
-        color: white;
+        margin: 0;
 	}
 
 	.nav-link {
@@ -47,23 +56,38 @@ import Card from "./Card.astro";
 		color: inherit;
 		text-decoration: none;
 		display: block;
-		padding: 0.25em;
 		transition: background-color 0.2s ease-in-out;
         text-transform: uppercase;
+        position: relative;
         
-        .card {
-            padding: 0.5em 1em;
-            all: unset;
+       
+            padding: 1.25rem 1rem;
+        &::after {
+            content: '';
+            display: block;
+            width: calc(100% - 2rem);
+            height: 2px;
+            margin-top: 1px;
+            background: rgb(var(--accent));
+            transition: transform 0.3s;
+            position: absolute;
+            transform: scaleX(0);
         }
-
-		.card:focus {
-			outline: 1px solid rgb(var(--text-color));
+        
+		&:focus {
+            outline: 1px solid rgb(var(--text-color));
 			outline-offset: 2px;
 		}
-
-		.card:hover {
-			text-decoration: underline;
+        
+		&:hover::after {
+            transform: scaleX(1);
+			
+            
 		}
+
+        .title {
+            font-size: 1.2rem !important;
+        }
 
 	}
 </style>

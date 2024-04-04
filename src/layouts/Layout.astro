@@ -113,20 +113,13 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string, icon: 
 		box-sizing: inherit;
 	}
 
-	/* Light mode */
-	@media (prefers-color-scheme: light) {
-		:root {
-			--text-color: 0, 0, 0;
-			--background-color: 225, 225, 225;
-		}
-	}
-
 	.container {
 		display: grid;
 		min-height: 100vh;
 		max-width: 600px;
 		margin: auto;
 		padding: 2rem 1rem;
+		padding-top: 5.5rem;
 		gap: 2rem;
 		grid-template-rows: 1fr auto;
 	}
