@@ -28,12 +28,11 @@ import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
 import {Image} from 'astro:assets'
 
-<Image class="profile-image" src="/ryan-keeping-profile.jpg" alt="man running" height={100} width={100}  />
-
+<div class="hero">
 # Ryan Keeping
 ## Ultramarathon runner from Halifax, Nova Scotia.
-
-<Card title="Today's Run">
+</div>
+<Card title="Today's Run - April 4th">
     <div>
     <span>Port Blandford, NL</span> → <span>Gambo, NL</span>
     </div>
@@ -44,7 +43,7 @@ import {Image} from 'astro:assets'
   title="Fund My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
   progress={{
-    current: 14_497,
+    current: 15_122,
     total: 100_000,
     unit: "CAD"
   }}
@@ -60,7 +59,7 @@ Help fund my run and support a great cause. 🇨🇦 🏃🏼
   title="Distance Travelled"
   icon={{ src: StravaLogo, alt:"Strava" }}
   progress={{
-    current: 225,
+    current: 250,
     total: 7_386,
     unit: "kilometers"
   }}

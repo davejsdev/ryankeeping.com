@@ -7,8 +7,8 @@ day,date,distance,location
 6,2024-04-06,450,Notre Dame Junction - Badger
 7,2024-04-07,525,Badger - South Brook
 8,2024-04-08,600,South Brook - Flight's Brook
-9,2024-04-09,675,Flight's Brook - Pasadena (Going through Deer Lake)
-10,2024-04-10,750,Pasadena - Mattis Point (Going through Corner Brook)
+9,2024-04-09,675,Flight's Brook - Pasadena (going through Deer Lake)
+10,2024-04-10,750,Pasadena - Mattis Point (going through Corner Brook)
 11,2024-04-11,825,Mattis Point - Codroy Pond (last stop before ferry)
 12,2024-04-12,900,Codroy Pond - Ferry (goodbye NL)
 13,2024-04-13,975,Sydney Ferry Terminal - Saint Patricks Channel
@@ -20,7 +20,7 @@ day,date,distance,location
 19,2024-04-19,1425,Truro + 150kms = Calhoun - Lower Ridge (go through Moncton)
 20,2024-04-20,1500,Lower Ridge - Upper Gagetown
 21,2024-04-21,1575,Upper Gagetown - Longs Creek
-22,2024-04-22,1650,Longs Creek - Waterville (stop in Woodstock for supplies)
+22,2024-04-22,1650,Longs Creek - Waterville
 23,2024-04-23,1725,Waterville - Four Falls
 24,2024-04-24,1800,Four Falls - Davis Mill
 25,2024-04-25,1875,Davis Mill - Saint-Louis-du-Ha!Ha!
@@ -37,7 +37,7 @@ day,date,distance,location
 36,2024-05-06,2700,Cheeseborough - Marysville
 37,2024-05-07,2775,Marysville - Colborne
 38,2024-05-08,2850,Colborne - Oshawa
-39,2024-05-09,2925,Oshawa - Toronto (run around city + drive 17km out of town next day)
+39,2024-05-09,2925,Oshawa - Toronto (run around the city)
 40,2024-05-10,3000,Cloverdale Mall - Inisfil Heights
 41,2024-05-11,3075,Inisfil Heights - South Bay
 42,2024-05-12,3150,South Bay - Nobel
@@ -55,7 +55,7 @@ day,date,distance,location
 54,2024-05-24,4050,Pringle - Jack Fish
 55,2024-05-25,4125,Jack Fish - Pays Plat
 56,2024-05-26,4200,Pays Plat - Red Rock
-57,2024-05-27,4275,Red Rock - Mackenzie (Almost Thunder Bay)
+57,2024-05-27,4275,Red Rock - Mackenzie (almost Thunder Bay)
 58,2024-05-28,4350,Mackenzie - Shabaqua Corners (Terry Fox statue day)
 59,2024-05-29,4425,Shabaqua Corners - Upsala
 60,2024-05-30,4500,Upsala - Martin
@@ -64,8 +64,8 @@ day,date,distance,location
 63,2024-06-02,4725,Minnitaki - Willard Lake
 64,2024-06-03,4800,Willard Lake - Granite Lake
 65,2024-06-04,4875,Granite Lake - Prawda
-66,2024-06-05,4950,Prawda - Deacons Corner (Basically Winnipeg)
-67,2024-06-06,5025,Deacons Corner - Dacotah (Run past Winnipeg)
+66,2024-06-05,4950,Prawda - Deacons Corner (basically Winnipeg)
+67,2024-06-06,5025,Deacons Corner - Dacotah (run past Winnipeg)
 68,2024-06-07,5100,Dacotah - Caye
 69,2024-06-08,5175,Caye - Douglas
 70,2024-06-09,5250,Douglas - Oak Lake

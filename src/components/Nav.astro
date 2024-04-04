@@ -75,11 +75,11 @@
         }
         
 		&:focus {
-            outline: 1px solid rgb(var(--text-color));
-			outline-offset: 2px;
+            outline: none
+		
 		}
         
-		&:hover::after {
+		&:hover::after, &:focus::after {
             transform: scaleX(1);
 			
             
