@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import { formatDistance, formatDollars } from '../util/format';
 import Card from './Card.astro';
+import ButtonLink from './ButtonLink.astro';
 
 
 interface Props {
@@ -37,24 +38,21 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
             </a>
         </header>
         {description && <p class="description">{description}</p>}
+        <slot />
         <div class="progress">
             <p class="progress-label">{formattedProgress}</p>
             <div class="progress-bar">
                 <div class="progress-bar--inner"></div>
             </div>
         </div>
-        <a href={href} target="_blank" rel="noopener noreferrer">
+        <ButtonLink href={href} external color={color} textColor='#fff'>
             {cta}
-        </a>
+        </ButtonLink>
     </section>
 </Card>
 <style>
 	.progress-card {
 		display: grid;
-		padding: 1.5rem;
-		background-color: #fff;
-		border-radius: 0.5rem;
-        text-align: left;
         gap: 1rem;
         color: #000;
 
@@ -67,6 +65,7 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
 
         .icon {
             width: 50px;
+            margin-top: -1rem;
         }
 	}
 
@@ -85,11 +84,25 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
 	}
 
 	.title {
+		text-align: left;
+		font-size: 0.8rem;
 		margin: 0;
-		font-size: 1rem;
-        font-style: normal;
-        text-align: left;
-        text-transform: none;
+		text-transform: uppercase;
+		font-style: normal;
+		position: relative;
+		line-height: 1;
+
+		&::before {
+			position: relative;
+			float: left;
+			content: '';
+			margin-right: 0.5rem;
+			display: block;
+			background-color: rgb(var(--accent));
+			height: 1lh;
+			width: 0.5rem;
+			border-radius: 2px;
+		}
 	}
 	p {
 		margin: 0;

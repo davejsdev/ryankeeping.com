@@ -21,7 +21,8 @@ content:
     - title: Schedule
       url: /schedule
 ---
-
+import Card from '../components/Card.astro';
+import ButtonLink from '../components/ButtonLink.astro';
 import ProgressCard from '../components/ProgressCard.astro';
 import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
@@ -32,12 +33,16 @@ import {Image} from 'astro:assets'
 # Ryan Keeping
 ## Ultramarathon runner from Halifax, Nova Scotia.
 
-On April 1st I started running across Canada. I'll be running 75KM a day for 99 days. 🇨🇦 🏃🏼
+<Card title="Today's Run">
+    <div>
+    <span>Port Blandford, NL</span> → <span>Gambo, NL</span>
+    </div>
+    <ButtonLink href="/schedule">Full Route</ButtonLink>
+</Card>
 
 <ProgressCard
-  title="Ryan's Cross-Canada Run"
+  title="Fund My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
-  description='Help fund my run and support the Heart & Stroke Foundation.'
   progress={{
     current: 14_497,
     total: 100_000,
@@ -46,11 +51,14 @@ On April 1st I started running across Canada. I'll be running 75KM a day for 99 
   cta="Donate Now"
   href='https://www.gofundme.com/f/ryans-crosscanada-run'
   color="#02A95C"
-  />
+>
+On April 1st I started running across Canada raising money for the **Heart & Stroke Foundation**.
+
+Help fund my run and support a great cause. 🇨🇦 🏃🏼
+</ProgressCard>
 <ProgressCard
   title="Distance Travelled"
   icon={{ src: StravaLogo, alt:"Strava" }}
-  description='75 kilometers a day for 99 days.'
   progress={{
     current: 225,
     total: 7_386,
@@ -59,4 +67,6 @@ On April 1st I started running across Canada. I'll be running 75KM a day for 99 
   cta="Follow my progress"
   href='https://www.strava.com/athletes/52922322'
   color="#FC6100"
-  />
+  >
+  I'm running 75KM every day for 99 days. Follow my progress on Strava.
+  </ProgressCard>
