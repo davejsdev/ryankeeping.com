@@ -4,6 +4,8 @@ import { SITE_NAME, DESCRIPTION, SHARE_IMAGE } from '../../src/config'
 import Card from '../components/Card.astro';
 import { Image } from 'astro:assets';
 import Nav from '../components/Nav.astro';
+import Favicon from '../components/Favicon.astro';
+import Icon from '../assets/favicon.svg';
 
 interface Props {
 	title: string;
@@ -33,8 +35,8 @@ const navLinks	= frontmatter.content.nav as { title: string; url: string, icon: 
 		<meta name="image" property="og:image" content={ SHARE_IMAGE }>
 		<meta name="description" content={ DESCRIPTION } />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<Favicon src={Icon} />
 		<title>{ pageTitle }</title>
 		<ViewTransitions />
 	</head>

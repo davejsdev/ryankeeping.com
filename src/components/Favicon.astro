@@ -1,0 +1,28 @@
+---
+import { type ImageOutputFormat } from "astro";
+import { getImage } from "astro:assets";
+
+export interface Props {
+    src: ImageMetadata | string;
+}
+
+const { src } = Astro.props;
+
+const image = (size: number, format: ImageOutputFormat) =>
+    getImage({ src, format, width: size, height: size }).then((x) => x.src);
+const sizedIcon = async (s: number) => [s + "x" + s, await image(s, "png")];
+const sizedIcons =
+    typeof src == "string"
+        ? async () => [[undefined, src]]
+        : (sizes: number[]) => Promise.all(sizes.map(sizedIcon));
+const favicons = await sizedIcons([196, 160, 96, 64, 32, 16]);
+const apples = await sizedIcons([57, 114, 72, 144, 60, 120, 76, 152, 180]);
+---
+
+{
+    favicons.map(([sizes, href]) => (
+        <link rel="icon" type="image/png" {sizes} {href} />
+    ))
+}
+{apples.map(([sizes, href]) => <link rel="apple-touch-icon" {sizes} {href} />)}
+<meta name="msapplication-TileImage" content={await image(144, "png")} />

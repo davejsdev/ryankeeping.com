@@ -4,6 +4,8 @@ import { Amplitude } from 'astro-analytics'
 import { SITE_NAME, DESCRIPTION, SHARE_IMAGE } from '../../src/config'
 import Nav from '../components/Nav.astro';
 import Card from '../components/Card.astro';
+import Favicon from '../components/Favicon.astro';
+import Icon from '../assets/favicon.svg';
 
 interface Props {
 	title: string;
@@ -26,7 +28,7 @@ const pageTitle = (title || frontmatter?.title) + ' | ' + 'Ryan Keeping'
 		<meta name="image" property="og:image" content={ SHARE_IMAGE }>
 		<meta name="description" content={ DESCRIPTION } />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<Favicon src={Icon} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{ pageTitle }</title>
 		<Amplitude apiKey="79bc9714968c39042ba3ec00ed5f0ed9" />
