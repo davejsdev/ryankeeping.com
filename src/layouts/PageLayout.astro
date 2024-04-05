@@ -37,11 +37,9 @@ const pageTitle = (title || frontmatter?.title) + ' | ' + 'Ryan Keeping'
 	<body>
 		<div class="container">
             <Nav />
-			<Card>
 				<main>
 					<slot />
 				</main>
-			</Card>
 			
 			<footer>
 				<p>&copy; {new Date().getFullYear()} {SITE_NAME}</p>
