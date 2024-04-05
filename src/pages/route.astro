@@ -46,9 +46,6 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
       <div class="map-wrapper">
         <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1T-QHKFuBgcD0Dvf5KOiiE9d485-pQmM&ehbc=2E312F&noprof=1"></iframe>
       </div>
-      <p style="font-size: 0.8rem; font-style: italic">
-        Note: Not all locations are marked on the map. Please refer to the schedule below for more details.
-      </p>
       <br />
       <h2>Schedule</h2> 
       <div class="scrollable-table">
@@ -113,6 +110,8 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
       position:relative;
       height:0;
       background: #f5f5f5;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);
       @media (max-width: 700px){
         padding-bottom: 80%;
       }
@@ -128,6 +127,7 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
       width:100%;
       position:absolute;
       border: 0;
+      
     }
   </style>
 </Layout>
