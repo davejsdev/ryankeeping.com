@@ -36,8 +36,6 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
 ---
 
 <Layout title="Schedule">
-
-  <!-- <div style="display: grid; gap: 0.5rem"> -->
       <h1>Route</h1>
       <p>
           If you're interested in running with me, please reach out to me on social media. I'd love 
@@ -46,6 +44,9 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
       <div class="map-wrapper">
         <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1T-QHKFuBgcD0Dvf5KOiiE9d485-pQmM&ehbc=2E312F&noprof=1"></iframe>
       </div>
+      <p style="font-size: 0.8rem; font-style: italic">
+        This map shows an approximate route.
+      </p>
       <br />
       <h2>Schedule</h2> 
       <div class="scrollable-table">
@@ -70,7 +71,6 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
                 </tbody>
             </table>
         </div>
-    <!-- </div> -->
   <style>
 
     .scrollable-table {
