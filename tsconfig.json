@@ -8,5 +8,6 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.astro"
-  ]
+  ],
+  "exclude": ["functions/**/*"]
 }
