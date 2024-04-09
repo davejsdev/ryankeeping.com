@@ -28,14 +28,15 @@ import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
 import {Image} from 'astro:assets'
 
-<div class="hero">
-# Ryan Keeping
-## Ultramarathon runner from Halifax, Nova Scotia.
+<div style="overflow:hidden;padding-bottom:60%;position:relative;height:0;border-radius: 0.5rem;box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);">
+<iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" src="https://www.youtube.com/embed/BT-9pYCLlf4?si=dT2RUmr7mdvugfZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<Card title="April 8th">
+<Card title="April 9th">
     <div>
-    <span>South Brook, NL</span> → <span>Flight's Brook, NL</span>
+    <span>Flight's Brook, NL</span>
+    → 
+    <span>Pasadena, NL</span> 
     </div>
     <ButtonLink href="/route">Full Route</ButtonLink>
 </Card>
@@ -44,7 +45,7 @@ import {Image} from 'astro:assets'
   title="Support My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
   progress={{
-    current: 28_169,
+    current: 29_034,
     total: 100_000,
     unit: "CAD"
   }}
@@ -61,7 +62,7 @@ Help fund my run and support a great cause. 🇨🇦 🏃🏼
   title="Total Distance"
   icon={{ src: StravaLogo, alt:"Strava" }}
   progress={{
-    current: 550,
+    current: 600,
     total: 7_386,
     unit: "kilometers"
   }}
