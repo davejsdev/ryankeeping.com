@@ -60,14 +60,23 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
                     </tr>
                 </thead>
                 <tbody>
-                    {results.map((row) => (
+                    {results.map((row, i) => {
+                      const skipped = i === 11;
+                      return (
                         <tr>
+                          {!skipped && <>
                             <td>{row.day}</td>
                             <td>{formatDate(row.date)}</td>
                             <td>{formatDistance(row.distance)}</td>
                             <td>{row.location}</td>
-                            </tr>
-                            ))}
+                            </>}
+                            {skipped && <>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                             <td><del>{row.location}</del> (skipped due to ferry cancellation warning)</td></>}
+                        </tr>
+                      )})}
                 </tbody>
             </table>
         </div>
