@@ -2,13 +2,14 @@
 
 interface Props {
 	title?: string;
+	featured?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, featured } = Astro.props;
 
 ---
 
-<section class="card">
+<section class="card" data-featured={featured}>
 { title && <h2 class="title">{title}</h2> }
 <slot />
 </section>
@@ -38,7 +39,7 @@ const { title } = Astro.props;
 		text-align: left;
 		display: grid;
 		gap: 1.25rem;
-		background-color: #fff;
+		background: #fff;
 		border-radius: 0.5rem;
 		box-shadow: 0 0 1rem 0 #0002;
         color: #000;
@@ -48,6 +49,11 @@ const { title } = Astro.props;
 			gap: 1.5rem;
 			padding: 2rem;
 		}
+		&[data-featured] {
+			border: 2px solid rgb(var(--accent));
+		}
 	}
+	
+	
 
 </style>
