@@ -28,24 +28,21 @@ import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
 import {Image} from 'astro:assets'
 
-<Card title="Group Run - April 12th @ 7:00 PM" featured>
+{/* <Card title="Group Run - April 12th @ 7:00 PM" featured>
   <div>
   **The Big Fiddle - Sydney, NS**
   <br />
   Come out and run with me, everyone is welcome!
   </div>
-</Card>
+</Card> */}
 
 <div style="overflow:hidden;padding-bottom:60%;position:relative;height:0;border-radius: 0.5rem;box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);">
 <iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" src="https://www.youtube.com/embed/BT-9pYCLlf4?si=dT2RUmr7mdvugfZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<Card title="April 12th">
-    <div>
-    Running Around Sydney, NS
-    <br />
-    <span style="font-size: 0.8rem">_I will be running 75KM around Sydney to make up for missed KMs in Newfoundland. I'll resume my original schedule April 13th!_</span>
-    </div>
+<Card title="April 13th">
+    Sydney, NS (Ferry Terminal) → Saint Patrick's Channel, NS
+
     <ButtonLink href="/route">Full Route</ButtonLink>
 </Card>
 
@@ -70,7 +67,7 @@ Help fund my run and support a great cause. 🇨🇦 🏃🏼
   title="Total Distance"
   icon={{ src: StravaLogo, alt:"Strava" }}
   progress={{
-    current: 875,
+    current: 900,
     total: 7_386,
     unit: "kilometers"
   }}
