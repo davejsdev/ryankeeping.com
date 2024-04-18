@@ -35,7 +35,7 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
   }).format;
 ---
 
-<Layout title="Schedule">
+<Layout title="Schedule" frontmatter={{ pathname: '/route'}}>
       <h1>Route</h1>
       <p>
           If you're interested in running with me, please reach out to me on social media. I'd love 
@@ -89,7 +89,6 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
     }
     table {
       width: 100%;
-      /* width: max-content; */
       border-collapse: collapse;
     }
 

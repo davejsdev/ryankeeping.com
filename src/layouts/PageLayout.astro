@@ -8,6 +8,10 @@ import Icon from '../assets/favicon.svg';
 
 interface Props {
 	title: string;
+	frontmatter?: {
+		title?: string;
+		pathname?: string;
+	};
 }
 
 // @ts-ignore - TODO figure otu type safety on this
@@ -35,7 +39,7 @@ const pageTitle = (title || frontmatter?.title) + ' | ' + 'Ryan Keeping'
 	</head>
 	<body>
 		<div class="container">
-            <Nav />
+            <Nav path={Astro.props.frontmatter?.pathname} />
 				<main>
 					<slot />
 				</main>

@@ -24,6 +24,7 @@ content:
 import Card from '../components/Card.astro';
 import ButtonLink from '../components/ButtonLink.astro';
 import ProgressCard from '../components/ProgressCard.astro';
+import Video from '../components/Video.astro';
 import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
 import {Image} from 'astro:assets'
@@ -34,9 +35,7 @@ import {Image} from 'astro:assets'
 Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower parking lot). Everyone is welcome!
 </Card>
 
-<div style="overflow:hidden;padding-bottom:60%;position:relative;height:0;border-radius: 0.5rem;box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);">
-<iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" src="https://www.youtube.com/embed/BT-9pYCLlf4?si=dT2RUmr7mdvugfZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<Video url="https://www.youtube.com/embed/qstjFg0lWoE?si=Nbo-pXfuIgw_JxT3" />
 
 <Card title="Thursday, April 18th">
     Enfield, NS
@@ -50,7 +49,7 @@ Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower
   title="Support My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
   progress={{
-    current: 41_775,
+    current: 42_085,
     total: 100_000,
     unit: "CAD"
   }}

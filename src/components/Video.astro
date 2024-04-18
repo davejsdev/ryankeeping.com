@@ -1,0 +1,12 @@
+---
+
+interface Props {
+	url?: string;
+}
+
+const { url } = Astro.props;
+
+---
+<div style="overflow:hidden;padding-bottom:60%;position:relative;height:0;border-radius: 0.5rem;box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);">
+<iframe style="left:0;top:0;height:100%;width:100%;position:absolute;" src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
