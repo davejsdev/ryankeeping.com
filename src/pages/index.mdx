@@ -37,6 +37,7 @@ Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower
 
 <Video url="https://www.youtube.com/embed/qstjFg0lWoE?si=Nbo-pXfuIgw_JxT3" />
 
+{/* TODO: automate based on schedule */}
 <Card title="Wednesday, April 24th">
   Perth-Andover, NB
   →
@@ -45,14 +46,11 @@ Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower
   <ButtonLink href="/route">Full Route</ButtonLink>
 </Card>
 
+{/* TODO: pull stats out into content doc */}
 <ProgressCard
+  id="gofundme"
   title="Support My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" }}
-  progress={{
-    current: 54_285,
-    total: 100_000,
-    unit: "CAD"
-  }}
   cta="Donate Now"
   href='https://www.gofundme.com/f/ryans-crosscanada-run'
   color="#02A95C"
@@ -62,13 +60,9 @@ On April 1st I started running across Canada raising money for the **Heart & Str
 Help fund my run and support a great cause. 🇨🇦 🏃🏼
 </ProgressCard>
 <ProgressCard
+  id='strava'
   title="Total Distance"
   icon={{ src: StravaLogo, alt:"Strava" }}
-  progress={{
-    current: 1_755,
-    total: 7_386,
-    unit: "kilometers"
-  }}
   cta="Follow my progress"
   href='https://www.strava.com/athletes/52922322'
   color="#FC6100"

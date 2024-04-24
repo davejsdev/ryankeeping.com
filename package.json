@@ -12,9 +12,17 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/mdx": "^2.2.2",
+    "@astrojs/react": "^3.3.1",
+    "@sanity/astro": "^3.0.0",
+    "@sanity/client": "^6.15.20",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
     "astro": "^4.5.12",
     "astro-analytics": "^2.7.0",
-    "papaparse": "^5.4.1"
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.39.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240312.0",
