@@ -3,10 +3,9 @@ import { Image } from 'astro:assets';
 import { formatDistance, formatDollars } from '../util/format';
 import Card from './Card.astro';
 import ButtonLink from './ButtonLink.astro';
-import { sanityClient } from "sanity:client";
+// import { sanityClient } from "sanity:client";
 
 interface Props {
-    id: string;
 	title: string;
 	description: string;
 	icon: {
@@ -15,20 +14,19 @@ interface Props {
     };
     href: string;
     cta: string;
-    color: string;
+    color: string; 
+    progress: {
+        current: number;
+        total: number;
+        unit: string;
+    };
 }
 
-const { href, title, description, icon, cta, color, id } = Astro.props;
+const { href, title, description, icon, cta, color, progress } = Astro.props;
 
-const progressResults = await sanityClient.fetch(`*[_type == "progress"]`);
-console.log(`progressResults`, progressResults.length);
-const progress = progressResults.find((p: any) => {
-    console.log(`p`, p.id, id);
-    return p.id === id;
-});
+// const progress = await sanityClient.fetch(`*[_type == "progress"`);
 
-console.log(`progress`, progress);
-const formatter = progress.id === 'gofundme' ? formatDollars : formatDistance;
+const formatter = progress.unit === 'CAD' ? formatDollars : formatDistance;
 
 const formattedProgress = `${formatter(progress.current)} / ${formatter(progress.total)}`;
 
