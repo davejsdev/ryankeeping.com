@@ -1,7 +1,7 @@
 ---
 import { fade, ViewTransitions } from 'astro:transitions'
 import { SITE_NAME, DESCRIPTION, SHARE_IMAGE } from '../../src/config'
-import Card from '../components/Card.astro';
+import Card from '../components/Card';
 import { Image } from 'astro:assets';
 import Nav from '../components/Nav.astro';
 import Favicon from '../components/Favicon.astro';
@@ -9,6 +9,7 @@ import Icon from '../assets/favicon.svg';
 
 interface Props {
 	title: string;
+	frontmatter: any;
 }
 
 // @ts-ignore - TODO figure otu type safety on this
@@ -231,3 +232,4 @@ const links	= frontmatter.content.links as { title: string; url: string, icon: a
 	}
 	
 </style>
+../components/Card.tsx

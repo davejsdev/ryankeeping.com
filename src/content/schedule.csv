@@ -1,100 +1,100 @@
-day,date,distance,location
-1,2024-04-01,75,Terry Fox Memorial - Ocean Pond
-2,2024-04-02,150,Ocean Pond - Come by Chance
-3,2024-04-03,225,Come by Chance - Port Blandford-Muddy Brook
-4,2024-04-04,300,Port Blandford-Muddy Brook - Butts/Gambo
-5,2024-04-05,375,Butts/Gambo - Notre Dame Junction
-6,2024-04-06,450,Notre Dame Junction - Red Cliff
-7,2024-04-07,525,Red Cliff - South Brook
-8,2024-04-08,600,South Brook - Flight's Brook
-9,2024-04-09,675,Flight's Brook - Pasadena (going through Deer Lake)
-10,2024-04-10,750,Pasadena - Mattis Point (going through Corner Brook)
-11,2024-04-11,825,Mattis Point - Codroy Pond (last stop before ferry)
---,2024-04-12,825,Codroy Pond - Ferry (goodbye NL)
-12,2024-04-12,900,Running around Sydney (making up for lost day in NL)
-13,2024-04-13,975,Sydney Ferry Terminal - Saint Patricks Channel
-14,2024-04-14,1050,Saint Patricks Channel - Aulds Cove (just past causeway)
-15,2024-04-15,1125,Aulds Cove - Kenzieville
-16,2024-04-16,1200,Kenzieville - Truro (Valley Cross Roads)
-17,2024-04-17,1275,Truro - Enfield
-18,2024-04-18,1350,Enfield - Halifax (Hometown day)
-19,2024-04-19,1425,Truro + 150kms = Calhoun - Lower Ridge (go through Moncton)
-20,2024-04-20,1500,Lower Ridge - Upper Gagetown
-21,2024-04-21,1575,Upper Gagetown - Longs Creek
-22,2024-04-22,1650,Longs Creek - Waterville
-23,2024-04-23,1725,Waterville - Perth-Andover
-24,2024-04-24,1800,Perth-Andover - Riviere-Verte
-25,2024-04-25,1875,Riviere-Verte - Saint-Louis-du-Ha!Ha!
-26,2024-04-26,1950,Saint-Louis-du-Ha!Ha! - Saint-Andre-Station
-27,2024-04-27,2025,Saint-Andre-Station - Saint-Jean-Port-Joli (approaching Quebec City)
-28,2024-04-28,2100,Saint-Jean-Port-Joli - Beaumont (Basically Quebec City)
-29,2024-04-29,2175,Beaumont - Portneuf (run through Quebec City)
-30,2024-04-30,2250,Portneuf - Trois-Rivieres
-31,2024-05-01,2325,Trois-Rivieres - Lanoraie
-32,2024-05-02,2400,Lanoraie - Montreal
-33,2024-05-03,2475,L'Ile-Perrot - Cornwall
-34,2024-05-04,2550,Cornwall - Johnstown
-35,2024-05-05,2625,Johnstown - Cheeseborough
-36,2024-05-06,2700,Cheeseborough - Marysville
-37,2024-05-07,2775,Marysville - Colborne
-38,2024-05-08,2850,Colborne - Oshawa
-39,2024-05-09,2925,Oshawa - Toronto (run around the city)
-40,2024-05-10,3000,Cloverdale Mall - Inisfil Heights
-41,2024-05-11,3075,Inisfil Heights - South Bay
-42,2024-05-12,3150,South Bay - Nobel
-43,2024-05-13,3225,Nobel - Wanikewin
-44,2024-05-14,3300,Wanikewin - Sudbury
-45,2024-05-15,3375,Sudbury - Massey
-46,2024-05-16,3450,Massey - Blind River
-47,2024-05-17,3525,Blind River - Bruce Mines
-48,2024-05-18,3600,Bruce Mines - Sault Ste. Marie
-49,2024-05-19,3675,Sault Ste. Marie - Pancake Bay Provincial Park
-50,2024-05-20,3750,Pancake Bay Provincial Park - Orphan Lake Trailhead
-51,2024-05-21,3825,Orphan Lake Trailhead - Helen Junction
-52,2024-05-22,3900,Helen Junction - White River
-53,2024-05-23,3975,White River - Pringle
-54,2024-05-24,4050,Pringle - Jack Fish
-55,2024-05-25,4125,Jack Fish - Pays Plat
-56,2024-05-26,4200,Pays Plat - Red Rock
-57,2024-05-27,4275,Red Rock - Mackenzie (almost Thunder Bay)
-58,2024-05-28,4350,Mackenzie - Shabaqua Corners (Terry Fox statue day)
-59,2024-05-29,4425,Shabaqua Corners - Upsala
-60,2024-05-30,4500,Upsala - Martin
-61,2024-05-31,4575,Martin - Borups Corners
-62,2024-06-01,4650,Borups Corners - Minnitaki
-63,2024-06-02,4725,Minnitaki - Willard Lake
-64,2024-06-03,4800,Willard Lake - Granite Lake
-65,2024-06-04,4875,Granite Lake - Prawda
-66,2024-06-05,4950,Prawda - Deacons Corner (basically Winnipeg)
-67,2024-06-06,5025,Deacons Corner - Dacotah (run past Winnipeg)
-68,2024-06-07,5100,Dacotah - Caye
-69,2024-06-08,5175,Caye - Douglas
-70,2024-06-09,5250,Douglas - Oak Lake
-71,2024-06-10,5325,Oak Lake - Fleming
-72,2024-06-11,5400,Fleming - Percival
-73,2024-06-12,5475,Percival - Sintaluta
-74,2024-06-13,5550,Sintaluta - Regina
-75,2024-06-14,5625,Regina - Moose Jaw
-76,2024-06-15,5700,Moose Jaw - Secretan
-77,2024-06-16,5775,Secretan - Rush Lake
-78,2024-06-17,5850,Rush Lake - Antelope
-79,2024-06-18,5925,Antelope - Hay Lake/Maple Creek
-80,2024-06-19,6000,Hay Lake/Maple Creek - Irvine
-81,2024-06-20,6075,Irvine - Ralston
-82,2024-06-21,6150,Ralston - Southesk
-83,2024-06-22,6225,Southesk - Gleichen
-84,2024-06-23,6300,Gleichen - Calgary
-85,2024-06-24,6375,Calgary - Morley (run through Calgary)
-86,2024-06-25,6450,Morley - Sawback
-87,2024-06-26,6525,Sawback - Field
-88,2024-06-27,6600,Field - Forde
-89,2024-06-28,6675,Forde - Glacier
-90,2024-06-29,6750,Glacier - Three Valley Gap
-91,2024-06-30,6825,Three Valley Gap - South Canoe
-92,2024-07-01,6900,South Canoe - Pritchard
-93,2024-07-02,6975,Pritchard - Lac Le Jeune
-94,2024-07-03,7050,Lac Le Jeune - Kingsvale
-95,2024-07-04,7125,Kingsvale - Othello
-96,2024-07-05,7200,Othello - Barrowtown
-97,2024-07-06,7275,Barrowtown - Surrey
-98,2024-07-07,7350,Surrey - FINISH (run to ferry - take ferry and finish run)
+day,date,distance,start,startProvince,end,endProvince,description,accomodations
+1,2024-04-01,75,Terry Fox Memorial,NL,Ocean Pond,NL,,
+2,2024-04-02,150,Ocean Pond,NL,Come by Chance,NL,,
+3,2024-04-03,225,Come by Chance,NL,Port Blandford-Muddy Brook,NL,,
+4,2024-04-04,300,Port Blandford-Muddy Brook,NL,Butts/Gambo,NL,,
+5,2024-04-05,375,Butts/Gambo,NL,Notre Dame Junction,NL,,
+6,2024-04-06,450,Notre Dame Junction,NL,Red Cliff,NL,,
+7,2024-04-07,525,Red Cliff,NL,South Brook,NL,,
+8,2024-04-08,600,South Brook,NL,Flight's Brook,NL,,
+9,2024-04-09,675,Flight's Brook,NL,Pasadena,NL,Going through Deer Lake,
+10,2024-04-10,750,Pasadena,NL,Mattis Point,NL,Going through Corner Brook,
+11,2024-04-11,825,Mattis Point,NL,Codroy Pond,NL,Last stop before ferry,
+--,2024-04-12,825,Codroy Pond,NL,Ferry,NL,Skipped due to ferry cancellation warning,
+12,2024-04-12,900,Running around Sydney,NS,,NS,Making up for lost day in NL,
+13,2024-04-13,975,Sydney Ferry Terminal,NS,Saint Patricks Channel,NS,,
+14,2024-04-14,1050,Saint Patricks Channel,NS,Aulds Cove,NS,Just past causeway,
+15,2024-04-15,1125,Aulds Cove,NS,Kenzieville,NS,,
+16,2024-04-16,1200,Kenzieville,NS,Truro,NS,Valley Cross Roads,
+17,2024-04-17,1275,Truro,NS,Enfield,NS,,
+18,2024-04-18,1350,Enfield,NS,Halifax,NS,Hometown day,
+19,2024-04-19,1425,Calhoun,NB,Lower Ridge,NB,Go through Moncton,
+20,2024-04-20,1500,Lower Ridge,NB,Upper Gagetown,NB,,
+21,2024-04-21,1575,Upper Gagetown,NB,Longs Creek,NB,,
+22,2024-04-22,1650,Longs Creek,NB,Waterville,NB,,
+23,2024-04-23,1725,Waterville,NB,Perth-Andover,NB,,
+24,2024-04-24,1800,Perth-Andover,NB,Riviere-Verte,NB,,
+25,2024-04-25,1875,Riviere-Verte,NB,Saint-Louis-du-Ha!Ha!,QC,,
+26,2024-04-26,1950,Saint-Louis-du-Ha!Ha!,QC,Saint-Andre-Station,QC,,
+27,2024-04-27,2025,Saint-Andre-Station,QC,Saint-Jean-Port-Joli,QC,Approaching Quebec City,
+28,2024-04-28,2100,Saint-Jean-Port-Joli,QC,Beaumont,QC,Basically Quebec City,
+29,2024-04-29,2175,Beaumont,QC,Portneuf,QC,Run through Quebec City,
+30,2024-04-30,2250,Portneuf,QC,Trois-Rivieres,QC,,
+31,2024-05-01,2325,Trois-Rivieres,QC,Lanoraie,QC,,https://docs.google.com/forms/d/e/1FAIpQLSd0ggJgGQGRgVyEfEr_pcEGVV0rNIlsC-jyAl4CD9QXfTgh0w/viewform?usp=sf_link
+32,2024-05-02,2400,Lanoraie,QC,Montreal,QC,,https://docs.google.com/forms/d/e/1FAIpQLScWQbMy202fczd6q1hcvujCVwfalU4dCeW4XNReFB7evycoqw/viewform?usp=sf_link
+33,2024-05-03,2475,L'Ile-Perrot,ON,Cornwall,ON,,https://docs.google.com/forms/d/e/1FAIpQLScOwFI1a8KAV0j8Z3_TA1RHCo4zoDdNmI_T7UDxY2rPL5rZXw/viewform?usp=sf_link
+34,2024-05-04,2550,Cornwall,ON,Johnstown,ON,,https://docs.google.com/forms/d/e/1FAIpQLScUky7BDWh6Zh0rci4kezGj-CX-V43O1fclBONF2tQYletn_w/viewform?usp=sf_link
+35,2024-05-05,2625,Johnstown,ON,Cheeseborough,ON,,https://docs.google.com/forms/d/e/1FAIpQLSdiBMIJUjiXwsOFvJcLFzbtYfdmTXkz1xmRdOh-MzzRkMVO2g/viewform?usp=sf_link
+36,2024-05-06,2700,Cheeseborough,ON,Marysville,ON,,https://docs.google.com/forms/d/e/1FAIpQLSdPudMVoGW5BSrAGbrBFo4Li8FNjI0ChUGUVNK_oBq4MF_P0g/viewform?usp=sf_link
+37,2024-05-07,2775,Marysville,ON,Colborne,ON,,https://docs.google.com/forms/d/e/1FAIpQLScnXyievrngModJeY7XL6sUG27ElbxzS6geJSr-MRp7zKE9UA/viewform?usp=sf_link
+38,2024-05-08,2850,Colborne,ON,Oshawa,ON,,https://docs.google.com/forms/d/e/1FAIpQLSd07c4F9ghxEmtsiKkA9y8sYRNrDZci3LlM2e2N2hau0bap0w/viewform?usp=sf_link
+39,2024-05-09,2925,Oshawa,ON,Toronto,ON,run around the city,https://docs.google.com/forms/d/e/1FAIpQLSf5ATNv1A2-bTP9UbWmCq8wU22-EZr3oVqLcWhbh-fAVyab8g/viewform?usp=sf_link
+40,2024-05-10,3000,Cloverdale Mall,ON,Inisfil Heights,ON,,https://docs.google.com/forms/d/e/1FAIpQLSd3uLECnJ2oQoXQrTIMqoGhsFpcWQfr_CgbBL_HLlX0vZ7Ycw/viewform?usp=sf_link
+41,2024-05-11,3075,Inisfil Heights,ON,South Bay,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfqMVldo-XG9rxEGqSvBOZaCXH1MfaPQYFo2UP0Dmj6e9tMSw/viewform?usp=sf_link
+42,2024-05-12,3150,South Bay,ON,Nobel,ON,,https://docs.google.com/forms/d/e/1FAIpQLSe_MrrjbcXP_ClIt3SS8en4FA4nwaBYFPyZnxHWju5PnwIymg/viewform?usp=sf_link
+43,2024-05-13,3225,Nobel,ON,Wanikewin,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfykbaz0Eq5APBte65Dc6ZzQMbxUdfzLiSDGTnqz6nrlFEVrQ/viewform?usp=sf_link
+44,2024-05-14,3300,Wanikewin,ON,Sudbury,ON,,https://docs.google.com/forms/d/e/1FAIpQLSdUBUyXFU1HIGdzdNXrvbnWwl7-hzmU8MqaTa6jsuYTrPRmqg/viewform?usp=sf_link
+45,2024-05-15,3375,Sudbury,ON,Massey,ON,,https://docs.google.com/forms/d/e/1FAIpQLSe_TMOHR_q9VVk9arJcUmYuuiot6oV0m0-hgcVWeE2dFwWwwQ/viewform?usp=sf_link
+46,2024-05-16,3450,Massey,ON,Blind River,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfyUlTkntVumSzVVafhMx0pFhVqhJvALhNDhEHYqsM1unz9AQ/viewform?usp=sf_link
+47,2024-05-17,3525,Blind River,ON,Bruce Mines,ON,,https://docs.google.com/forms/d/e/1FAIpQLSdtG7f4vpoRGrunNmgj-mTcM0g0uAs_Bask7k10zMQs_g7TnQ/viewform?usp=sf_link
+48,2024-05-18,3600,Bruce Mines,ON,Sault Ste. Marie,ON,,https://docs.google.com/forms/d/e/1FAIpQLScaxMY0oV_g4RRwprSVTAZCgqSYBL-4nWxeih_OeV7521P3mg/viewform?usp=sf_link
+49,2024-05-19,3675,Sault Ste. Marie,ON,Pancake Bay Provincial Park,ON,,https://docs.google.com/forms/d/e/1FAIpQLSd0qkW93dxMSfH0QoVpCW9tqXO8VjqjBaVAQcIPwS35H6rDCg/viewform?usp=sf_link
+50,2024-05-20,3750,Pancake Bay Provincial Park,ON,Orphan Lake Trailhead,ON,,https://docs.google.com/forms/d/e/1FAIpQLScNPzR0tfWO2pV0PocWwplSdy5WKsB-4RSLuRoWxv0T1tExgA/viewform?usp=sf_link
+51,2024-05-21,3825,Orphan Lake Trailhead,ON,Helen Junction,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfx-PPv0k-JSJgSLHP8db8Ls1pUosFI-p7lM2CBudud5EsWDQ/viewform?usp=sf_link
+52,2024-05-22,3900,Helen Junction,ON,White River,ON,,https://docs.google.com/forms/d/e/1FAIpQLSe33U0WL5wcw-YdgzILSayfPd37fcoOrmuGYqcPcCcTGY4HNg/viewform?usp=sf_link
+53,2024-05-23,3975,White River,ON,Pringle,ON,,https://docs.google.com/forms/d/e/1FAIpQLSeGnFsvDmbwUlOVJ5t1mHzA_QSHvS6WB4JpnZCeaS5CwtBnfg/viewform?usp=sf_link
+54,2024-05-24,4050,Pringle,ON,Jack Fish,ON,,https://docs.google.com/forms/d/e/1FAIpQLSeeUqdmKLzg09I6AMryqmYaDm250YN30XFDn6j3NbwjmUgERQ/viewform?usp=sf_link
+55,2024-05-25,4125,Jack Fish,ON,Pays Plat,ON,,https://docs.google.com/forms/d/e/1FAIpQLScFTETkY5S8xZOtZvtU5POjvBDgRKwsnXgu-2SV6lTfSSWggQ/viewform?usp=sf_link
+56,2024-05-26,4200,Pays Plat,ON,Red Rock,ON,,https://docs.google.com/forms/d/e/1FAIpQLScoC__C1seMye4rvpFXafdiy87KmkJcIQW28wG63nnekZrT2A/viewform?usp=sf_link
+57,2024-05-27,4275,Red Rock,ON,Mackenzie,ON,Almost Thunder Bay,https://docs.google.com/forms/d/e/1FAIpQLSfvbGAgvE8a7-oA8FM-zklSylvBbVCc6NhgTpyeWyHk6efT2w/viewform?usp=sf_link
+58,2024-05-28,4350,Mackenzie,ON,Shabaqua Corners,ON,Terry Fox statue day,https://docs.google.com/forms/d/e/1FAIpQLSeJLNqF347hGNQwDzKb8zW-AVlJ5yhVaMkY6F2HadaxqH1-dw/viewform?usp=sf_link
+59,2024-05-29,4425,Shabaqua Corners,ON,Upsala,ON,,https://docs.google.com/forms/d/e/1FAIpQLSd6ZxYNa2TktDo95w_nDpPyQSeRP9I4WzA_6HYDH2AgXKUa5A/viewform?usp=sf_link
+60,2024-05-30,4500,Upsala,ON,Martin,ON,,https://docs.google.com/forms/d/e/1FAIpQLSev33bpmlaeJFlNaLMIey1sxGd7hAUFHmMCKyioI12ZBvpleg/viewform?usp=sf_link
+61,2024-05-31,4575,Martin,ON,Borups Corners,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfEtZSYPaYgnnLm1pE6kWW5iEdx6hyMfI78T-2p7dNSqYmYzA/viewform?usp=sf_link
+62,2024-06-01,4650,Borups Corners,ON,Minnitaki,ON,,https://docs.google.com/forms/d/e/1FAIpQLSd5Qik72Bx3wt9hkTJBPLVuTV0FtRmtjz7Jdy--W7lZGxy5Jw/viewform?usp=sf_link
+63,2024-06-02,4725,Minnitaki,ON,Willard Lake,ON,,https://docs.google.com/forms/d/e/1FAIpQLSfp-o1nMHlMKkHofD4SZ7qqXe59M7zINjhSKfYeHbg_STvs2w/viewform?usp=sf_link
+64,2024-06-03,4800,Willard Lake,ON,Granite Lake,ON,,https://docs.google.com/forms/d/e/1FAIpQLSdMzk-mGiufUFcoRQx-tGszvuaoAbrr-I1Wb0nA1rxgiPvxiQ/viewform?usp=sf_link
+65,2024-06-04,4875,Granite Lake,ON,Prawda,MB,,https://docs.google.com/forms/d/e/1FAIpQLSd_B8sG_c_3xRm8OdkJGMmPMMfpuiIu5U9MkaHxb578gSjGNg/viewform?usp=sf_link
+66,2024-06-05,4950,Prawda,MB,Deacons Corner,MB,Basically Winnipeg,https://docs.google.com/forms/d/e/1FAIpQLScS6phkyTnuUPaof92c5QbEF7cQsfUsG5EYAbBJhu7BYV4VJA/viewform?usp=sf_link
+67,2024-06-06,5025,Deacons Corner,MB,Dacotah,MB,Run past Winnipeg,https://docs.google.com/forms/d/e/1FAIpQLSfMaXAVQhK4sCqTmSrDE2jSpD7G3t2XdtQWO75GVUORQjd4Sw/viewform?usp=sf_link
+68,2024-06-07,5100,Dacotah,MB,Caye,MB,,https://docs.google.com/forms/d/e/1FAIpQLSfrGsyyC6Gao2P--vcb_dpFHuSMgtFRw74vfLf-vWlPY8kRkw/viewform?usp=sf_link
+69,2024-06-08,5175,Caye,MB,Douglas,MB,,https://docs.google.com/forms/d/e/1FAIpQLSej4YPYxaVzsn7VGsBC653NLgBJkpqnaBd9op3pfH0kcF637w/viewform?usp=sf_link
+70,2024-06-09,5250,Douglas,MB,Oak Lake,MB,,https://docs.google.com/forms/d/e/1FAIpQLSebjpGhhiCZbnExRN0lWXM3mUBTMBd1m-fMAu0ND2wP6tj0ig/viewform?usp=sf_link
+71,2024-06-10,5325,Oak Lake,MB,Fleming,SK,,https://docs.google.com/forms/d/e/1FAIpQLScyFzjJfXWvZum1QLiIhuYYYwzBkKLwULrCJLtX1TmN57Zesw/viewform?usp=sf_link
+72,2024-06-11,5400,Fleming,SK,Percival,SK,,https://docs.google.com/forms/d/e/1FAIpQLSeVLJu67s6LTXtpVDfPuQHLW36b0i8VspkYRSItOIw6EFVBGg/viewform?usp=sf_link
+73,2024-06-12,5475,Percival,SK,Sintaluta,SK,,https://docs.google.com/forms/d/e/1FAIpQLSd7SziT2EB_NTQJXqaAThwAYST__lKoOiQUY81zWOXE1IFmmA/viewform?usp=sf_link
+74,2024-06-13,5550,Sintaluta,SK,Regina,SK,,https://docs.google.com/forms/d/e/1FAIpQLScDxDoegmWYbI5jGgDlLc6iR4BTR2lmd9vo43G7KaY1MC2n3g/viewform?usp=sf_link
+75,2024-06-14,5625,Regina,SK,Moose Jaw,SK,,https://docs.google.com/forms/d/e/1FAIpQLSdpHxLBqeXy9k7aJY8RoU9UkEvP7gqvWDseZa6jm0Btm8w-vA/viewform?usp=sf_link
+76,2024-06-15,5700,Moose Jaw,SK,Secretan,SK,,https://docs.google.com/forms/d/e/1FAIpQLSe4FvfKcNgvhpRhBzdTJANrv1VvfIBV2ENxLRSMgmLlO2j0dg/viewform?usp=sf_link
+77,2024-06-16,5775,Secretan,SK,Rush Lake,SK,,https://docs.google.com/forms/d/e/1FAIpQLScgriKANX6JkvAcnny7cwCreGEn7Nm5p3REuOKeUqK4p78-sA/viewform?usp=sf_link
+78,2024-06-17,5850,Rush Lake,SK,Antelope,SK,,https://docs.google.com/forms/d/e/1FAIpQLSe3kLxCuMn514pKu9TEa8DvBA_BivAB9zcDNovkAiDQ20lBzg/viewform?usp=sf_link
+79,2024-06-18,5925,Antelope,SK,Hay Lake/Maple Creek,SK,,https://docs.google.com/forms/d/e/1FAIpQLSebUTEqgTKmGOTvoVJUX3fbWsobTKKO8czAdC3zhUDHsWkBvw/viewform?usp=sf_link
+80,2024-06-19,6000,Hay Lake/Maple Creek,SK,Irvine,AB,,https://docs.google.com/forms/d/e/1FAIpQLSeLsLKeUIMA7Ehn0TxN6wQDTGOOZ2kMXuLi0LCDBZzLmMY8iA/viewform?usp=sf_link
+81,2024-06-20,6075,Irvine,AB,Ralston,AB,,https://docs.google.com/forms/d/e/1FAIpQLSdUe5cUgxECqxkk8BZVeRSSN1gbE67cL-5uYdf-QZUpFqtZkQ/viewform?usp=sf_link
+82,2024-06-21,6150,Ralston,AB,Southesk,AB,,https://docs.google.com/forms/d/e/1FAIpQLScZ2f7X9Vew_W2isD7DOxuomf0eQhmj26mfv87Gne54a5Rivg/viewform?usp=sf_link
+83,2024-06-22,6225,Southesk,AB,Gleichen,AB,,https://docs.google.com/forms/d/e/1FAIpQLSc7sV60ruvPUiqIxOsufy7Ibe5dScNTQ_J1F_x-14UQI7eQ_Q/viewform?usp=sf_link
+84,2024-06-23,6300,Gleichen,AB,Calgary,AB,,https://docs.google.com/forms/d/e/1FAIpQLSfNhB1rCb2gkQCQqaEAldTPvkHBhdNaWUPJKMdjGQA8iZ7feg/viewform?usp=sf_link
+85,2024-06-24,6375,Calgary,AB,Morley,AB,Run through Calgary,https://docs.google.com/forms/d/e/1FAIpQLSfN0pcpcfCrhEaGF2_S1O6zzaVQXBoDj7NkltPvlrQiN41Q5Q/viewform?usp=sf_link
+86,2024-06-25,6450,Morley,AB,Sawback,AB,,https://docs.google.com/forms/d/e/1FAIpQLScylwusNC9Uy91_656Jc7hHJEui4LAukU1Xg_rpw-V2kHA73Q/viewform?usp=sf_link
+87,2024-06-26,6525,Sawback,AB,Field,BC,,https://docs.google.com/forms/d/e/1FAIpQLSfRSnqnLgX5ovo62TwOcpVLUVhd7SJzKZgH9hEBB3KKU7JDhg/viewform?usp=sf_link
+88,2024-06-27,6600,Field,BC,Forde,BC,,https://docs.google.com/forms/d/e/1FAIpQLSewe3c8jkp-BxQmy9rwvUg1x6F5xczmsdR8v_S6dCkWAJyeEA/viewform?usp=sf_link
+89,2024-06-28,6675,Forde,BC,Glacier,BC,,https://docs.google.com/forms/d/e/1FAIpQLScbAaNmCVuipocnMc2aVHpLAcZztkYRV-GXP-SgGzaafFV7Aw/viewform?usp=sf_link
+90,2024-06-29,6750,Glacier,BC,Three Valley Gap,BC,,https://docs.google.com/forms/d/e/1FAIpQLSegM1jEOAu93y6b3uSNEbi8kZTB9g7q8o0FiKlecIZtdmktmg/viewform?usp=sf_link
+91,2024-06-30,6825,Three Valley Gap,BC,South Canoe,BC,,https://docs.google.com/forms/d/e/1FAIpQLSf_sm8Cn3w5g_fe1GnoOOLJIOlNPxlFLTj9V-9S1s22ZjWCtA/viewform?usp=sf_link
+92,2024-07-01,6900,South Canoe,BC,Pritchard,BC,,https://docs.google.com/forms/d/e/1FAIpQLSdCg2eMu45iX5Zz2oQt_tH8NjtNX_IOYeb_RzkalrVJ4mlIyQ/viewform?usp=sf_link
+93,2024-07-02,6975,Pritchard,BC,Lac Le Jeune,BC,,https://docs.google.com/forms/d/e/1FAIpQLSd6RnSWeErToANgmbxK2sLc8KcKdqtjdaYmHyT0eF3VpqevTw/viewform?usp=sf_link
+94,2024-07-03,7050,Lac Le Jeune,BC,Kingsvale,BC,,https://docs.google.com/forms/d/e/1FAIpQLSdbOxNOqjSscMpaO-mBOUW6FmBob2IdVwMnBs8NAuEqQR7sQA/viewform?usp=sf_link
+95,2024-07-04,7125,Kingsvale,BC,Othello,BC,,https://docs.google.com/forms/d/e/1FAIpQLSei2P77VzS3XElBKYwwM3aq4IfBT5xNeZmfUJ9y09lnFmH3tQ/viewform?usp=sf_link
+96,2024-07-05,7200,Othello,BC,Barrowtown,BC,,https://docs.google.com/forms/d/e/1FAIpQLSdAKkAb3nRK3uvcE-Qz74SLazXFvA-Qkhl1wZwm6nK7q_iI0Q/viewform?usp=sf_link
+97,2024-07-06,7275,Barrowtown,BC,Surrey,BC,,https://docs.google.com/forms/d/e/1FAIpQLSeQOIUt4y53rxKsJYfsJuWG3PNgC2VAUi5st9UZciBqsA5-qQ/viewform?usp=sf_link
+98,2024-07-07,7350,Surrey,BC,Victoria,BC,"Run to ferry, Take ferry and finish run",https://docs.google.com/forms/d/e/1FAIpQLSdSCgYa0O4r6RL5Wziqa4-bXIlR8Erem6_CnUVG2nd2DuL2rw/viewform?usp=sf_link

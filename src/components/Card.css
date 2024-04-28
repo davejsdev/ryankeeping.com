@@ -1,0 +1,40 @@
+.title {
+	text-align: left;
+	font-size: 0.8rem;
+	margin: 0;
+	text-transform: uppercase;
+	font-style: normal;
+	position: relative;
+	line-height: 1;
+
+	&::before {
+		position: relative;
+		float: left;
+		content: '';
+		margin-right: 0.5rem;
+		display: block;
+		background-color: rgb(var(--accent));
+		height: 1lh;
+		width: 0.5rem;
+		border-radius: 2px;
+	}
+}
+.card {
+	text-align: left;
+	display: grid;
+	gap: 1.25rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 1rem 0 #0002;
+	color: #000;
+	padding: 1.5rem;
+
+	@media (min-width: 768px) {
+		gap: 1.5rem;
+		padding: 2rem;
+	}
+	&[data-featured] {
+		border: 2px solid rgb(var(--accent));
+	}
+}
+

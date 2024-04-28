@@ -1,13 +1,12 @@
 ---
 import { Image } from 'astro:assets';
 import { formatDistance, formatDollars } from '../util/format';
-import Card from './Card.astro';
-import ButtonLink from './ButtonLink.astro';
+import Card from './Card';
+import ButtonLink from './ButtonLink';
 // import { sanityClient } from "sanity:client";
 
 interface Props {
 	title: string;
-	description: string;
 	icon: {
         src: string;
         alt: string;
@@ -20,9 +19,10 @@ interface Props {
         total: number;
         unit: string;
     };
+    children: any;
 }
 
-const { href, title, description, icon, cta, color, progress } = Astro.props;
+const { href, title, icon, cta, color, progress } = Astro.props;
 
 // const progress = await sanityClient.fetch(`*[_type == "progress"`);
 
@@ -40,7 +40,6 @@ const formattedProgress = `${formatter(progress.current)} / ${formatter(progress
                 <Image class="icon" src={icon.src} alt={icon.alt} inferSize />
             </a>
         </header>
-        {description && <p class="description">{description}</p>}
         <slot />
         <div class="progress">
             <p class="progress-label">{formattedProgress}</p>

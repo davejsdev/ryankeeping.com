@@ -1,0 +1,109 @@
+---
+import path from 'path';
+import { readFileSync } from 'fs';
+
+import Layout from '../layouts/Layout.astro';
+import ProgressCard from '../components/ProgressCard.astro';
+import Video from '../components/Video.astro';
+import GoFundMeLogo from '../assets/gofundme-logo.svg';
+import StravaLogo from '../assets/strava-logo.svg';
+import CurrentLocation from '../components/CurrentLocation.tsx';
+import Papa from 'papaparse';
+
+const csvFilePath = path.resolve('./src/content/schedule.csv');
+const csvFileContent = readFileSync(csvFilePath, 'utf8');
+
+
+    const links = [
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/ryan.keeping/',
+        icon: 'instagram-logo.svg'
+      },
+      {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/@ryan.keeping',
+        icon: 'youtube-logo.svg'
+      },
+      {
+        title: 'TikTok',
+        url: 'https://www.tiktok.com/@ryankeeping',
+        icon: 'tiktok-logo.svg'
+      },
+      {
+        title: 'Facebook',
+        url: 'https://www.facebook.com/profile.php?id=100086981121661',
+        icon: 'facebook-logo.svg'
+      }
+    ];
+
+type Dates = {
+    day: string;
+    date: Date;
+    distance: number;
+    start: string;
+    startProvince: string;
+    end: string;
+    endProvince: string;
+    description?: string;
+    accomodations?: string;
+};
+
+const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping: true,  
+    transform: (value, field) => {
+    if (field === 'date') {
+      return new Date(value);
+    }
+    return value;
+  }, 
+}).data;
+
+
+---
+<Layout title="Schedule" frontmatter={{ title: '', content: { links } }}>
+
+
+{/* <Card title="Group Run - April 18th @ 6:30 PM" featured>
+**Point Pleasant Park, Halifax, NS**
+
+Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower parking lot). Everyone is welcome!
+</Card> */}
+
+<Video url="https://www.youtube.com/embed/qstjFg0lWoE?si=Nbo-pXfuIgw_JxT3" />
+
+<CurrentLocation client:load schedule={schedule} />
+
+{/* TODO: pull stats out into content doc */}
+<ProgressCard
+  title="Support My Cross-Canada Run"
+  icon={{ src: GoFundMeLogo, alt:"Go Fund Me" } as any}
+  progress={{
+    current: 59_315,
+    total: 100_000,
+    unit: "CAD"
+  }}
+  cta="Donate Now"
+  href='https://www.gofundme.com/f/ryans-crosscanada-run'
+  color="#02A95C"
+>
+On April 1st I started running across Canada raising money for the **Heart & Stroke Foundation**.
+
+Help fund my run and support a great cause. 🇨🇦 🏃🏼
+</ProgressCard>
+<ProgressCard
+  title="Total Distance"
+  icon={{ src: StravaLogo, alt:"Strava" } as any}
+  progress={{
+    current: 2_025,
+    total: 7_386,
+    unit: "kilometers"
+  }}
+  cta="Follow my progress"
+  href='https://www.strava.com/athletes/52922322'
+  color="#FC6100"
+>
+I'm running 75KM every day for 99 days, making my way from St John's, NL to Victoria, BC.
+
+Follow my runs on Strava!
+</ProgressCard>
+</Layout>

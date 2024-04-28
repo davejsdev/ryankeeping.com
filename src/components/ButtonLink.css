@@ -1,0 +1,25 @@
+.button-link {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 0.8rem;
+	padding: 1.5em;
+	border-radius: 0.25rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	background-color: var(--button-color, #eee);
+	color: var(--button-text-color, #111);
+
+	&[data-size="small"] {
+		font-size: 0.6rem;
+		padding: 1em;
+		margin: -0.5em 0;
+		text-transform: none;
+	}
+
+	&[data-disabled] {
+		opacity: 0.25;
+		pointer-events: none;
+		filter: grayscale(1);
+	}
+}

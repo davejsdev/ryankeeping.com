@@ -8,6 +8,6 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.astro"
-  ],
+, "src/components/Card.tsx", "src/components/ButtonLink.tsx"  ],
   "exclude": ["functions/**/*"]
 }

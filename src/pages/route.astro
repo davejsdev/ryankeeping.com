@@ -3,6 +3,7 @@ import { readFileSync } from 'fs';
 import path from 'path';
 import Papa from 'papaparse';
 import Layout from '../layouts/PageLayout.astro';
+import ButtonLink from '../components/ButtonLink';
 
 const csvFilePath = path.resolve('./src/content/schedule.csv');
 const csvFileContent = readFileSync(csvFilePath, 'utf8');
@@ -11,7 +12,12 @@ type Dates = {
     day: string;
     date: Date;
     distance: number;
-    location: string;
+    start: string;
+    startProvince: string;
+    end: string;
+    endProvince: string;
+    description?: string;
+    accomodations?: string;
 };
 
 const results = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping: true,  
@@ -57,24 +63,36 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
                         <th>Date</th>
                         <th>Total Distance</th>
                         <th>Location</th>
+                        <th>Accomodations</th>
+                        <th>Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     {results.map((row, i) => {
                       const skipped = i === 11;
                       return (
-                        <tr>
+                        <tr style="position: relative;">
                           {!skipped && <>
                             <td>{row.day}</td>
                             <td>{formatDate(row.date)}</td>
                             <td>{formatDistance(row.distance)}</td>
-                            <td>{row.location}</td>
+                            <td>{row.start}, {row.startProvince} - {row.end}, {row.endProvince}</td>
+                            <td>{row.description}</td>
+                            {row.accomodations ? <td style="position: sticky; right: 0; background: linear-gradient(90deg, #f5f5f500 0%, #f5f5f5ff 8%); padding-left: 1.2rem; padding-right: 0">
+                              <ButtonLink href={row.accomodations} external size='small' color='rgb(var(--accent))' textColor='#fff'>
+                                Have a place I can stay?
+                              </ButtonLink>
+                            </td> : <td></td>}
                             </>}
                             {skipped && <>
                             <td>--</td>
                             <td>--</td>
                             <td>--</td>
-                             <td><del>{row.location}</del> (skipped due to ferry cancellation warning)</td></>}
+                            <td><del>{row.start}, {row.startProvince} - {row.end}, {row.endProvince}</del></td>
+                            <td>{row.description}</td>
+                            <td></td>
+                             </>
+                            }
                         </tr>
                       )})}
                 </tbody>
@@ -138,4 +156,4 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
       
     }
   </style>
-</Layout>
+</Layout>../components/ButtonLink.tsx
