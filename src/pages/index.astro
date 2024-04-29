@@ -9,6 +9,11 @@ import GoFundMeLogo from '../assets/gofundme-logo.svg';
 import StravaLogo from '../assets/strava-logo.svg';
 import CurrentLocation from '../components/CurrentLocation.tsx';
 import Papa from 'papaparse';
+import Card from '../components/Card';
+import { Image } from 'astro:assets';
+
+import tshirtImage from '../assets/tshirt.webp';
+import ButtonLink from '../components/ButtonLink';
 
 const csvFilePath = path.resolve('./src/content/schedule.csv');
 const csvFileContent = readFileSync(csvFilePath, 'utf8');
@@ -69,16 +74,26 @@ const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping
 Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower parking lot). Everyone is welcome!
 </Card> */}
 
-<Video url="https://www.youtube.com/embed/qstjFg0lWoE?si=Nbo-pXfuIgw_JxT3" />
-
+<!-- <Video url="https://www.youtube.com/embed/qstjFg0lWoE?si=Nbo-pXfuIgw_JxT3" /> -->
 <CurrentLocation client:load schedule={schedule} />
+
+<Card>
+  <Image src={tshirtImage} alt="Ryan Keeping" style="width: min(75%, 300px); height: auto; margin: auto" />
+  <p style="font-style: italic; font-size: 0.8rem">
+    80% of the proceeds will go to the Heart & Stroke Foundation and 20% will help support my run.
+  </p>
+  <ButtonLink href='https://eastcoastlifestyle.com/collections/coast-to-coast-tees' color='rgb(var(--accent))' textColor='#fff' external>
+    Pre-order a T-Shirt!
+  </ButtonLink>
+</Card>
+
 
 {/* TODO: pull stats out into content doc */}
 <ProgressCard
   title="Support My Cross-Canada Run"
   icon={{ src: GoFundMeLogo, alt:"Go Fund Me" } as any}
   progress={{
-    current: 59_795,
+    current: 59_820,
     total: 100_000,
     unit: "CAD"
   }}
@@ -86,15 +101,18 @@ Come join me for a group run Thursday, April 18th, at Point Pleasant Park (lower
   href='https://www.gofundme.com/f/ryans-crosscanada-run'
   color="#02A95C"
 >
-On April 1st I started running across Canada raising money for the **Heart & Stroke Foundation**.
-
-Help fund my run and support a great cause. 🇨🇦 🏃🏼
+<p>
+  On April 1st I started running across Canada raising money for the <strong>Heart & Stroke Foundation</strong>.
+</p>
+<p>
+  Help fund my run and support a great cause. 🇨🇦 🏃🏼
+</p>
 </ProgressCard>
 <ProgressCard
   title="Total Distance"
   icon={{ src: StravaLogo, alt:"Strava" } as any}
   progress={{
-    current: 2_075,
+    current: 2_100,
     total: 7_386,
     unit: "kilometers"
   }}
@@ -102,8 +120,11 @@ Help fund my run and support a great cause. 🇨🇦 🏃🏼
   href='https://www.strava.com/athletes/52922322'
   color="#FC6100"
 >
-I'm running 75KM every day for 99 days, making my way from St John's, NL to Victoria, BC.
-
-Follow my runs on Strava!
+<p>
+  I'm running 75KM every day for 99 days, making my way from St John's, NL to Victoria, BC.
+</p>
+<p>
+  Follow my runs on Strava!
+</p>
 </ProgressCard>
 </Layout>
