@@ -32,7 +32,7 @@ const CurrentLocation = ({ schedule }: { schedule: Dates[]}) => {
 	const formattedDate = formatDate(currentLocation?.date);
 
 	return (
-		<Card title={formattedDate}>
+		<Card title={`Today's Run - ${formattedDate}`}>
 			{currentLocation?.start}, {currentLocation?.startProvince} → {currentLocation?.end}, {currentLocation?.endProvince}
 
 			<ButtonLink href="/route">Full Route</ButtonLink>
