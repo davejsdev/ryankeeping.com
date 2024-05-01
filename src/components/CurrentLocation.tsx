@@ -3,7 +3,7 @@ import ButtonLink from "./ButtonLink";
 import Card from "./Card.tsx";
 
 const formatDate = new Intl.DateTimeFormat('en-CA', {
-    day: '2-digit',
+    day: 'numeric',
     month: 'long',
 	weekday: 'long',
     timeZone: 'UTC',
