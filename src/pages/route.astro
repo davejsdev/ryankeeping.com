@@ -78,7 +78,7 @@ const formatDate = new Intl.DateTimeFormat('en-CA', {
                             <td>{formatDistance(row.distance)}</td>
                             <td>{row.start}, {row.startProvince} → {row.end}, {row.endProvince}</td>
                             <td>{row.description}</td>
-                            {row.accomodations ? <td style="position: sticky; right: 0; background: linear-gradient(90deg, #f5f5f500 0%, #f5f5f5ff 8%); padding-left: 1.2rem; padding-right: 0">
+                            {(row.accomodations && new Date(row.date) >= new Date(Date.now() - 1000 * 60 * 60 * 24 )) ? <td style="position: sticky; right: 0; background: linear-gradient(90deg, #f5f5f500 0%, #f5f5f5ff 8%); padding-left: 1.2rem; padding-right: 0">
                               <ButtonLink href={row.accomodations} external size='small' color='rgb(var(--accent))' textColor='#fff'>
                                 Have a place I can stay?
                               </ButtonLink>
