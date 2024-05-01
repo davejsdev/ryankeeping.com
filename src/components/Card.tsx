@@ -9,7 +9,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ title, featured, children }) => {
 	return (
-		<section className={`card ${featured ? 'featured' : ''}`}>
+		<section className='card' data-featured={featured}>
 			{title && <h2 className="title">{title}</h2>}
 			{children}
 		</section>
