@@ -68,13 +68,13 @@ const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping
 <Layout title="Schedule" frontmatter={{ title: '', content: { links } }}>
 
 
-<Card title="Group Run" featured>
+<!-- <Card title="Group Run" featured>
 <strong>Leibel Field - Regina, SK</strong>
 <strong>Thursday, June 13 @ 8:00PM</strong>
 <p>
   Come out and join me for my last 5k of the day, everyone is welcome!
 </p>
-</Card>
+</Card> -->
 
 <Video url="https://www.youtube.com/embed/NFNPm78mbKA?si=1lY1GxAvqd-yqlYX" />
 <CurrentLocation client:load schedule={schedule} />
