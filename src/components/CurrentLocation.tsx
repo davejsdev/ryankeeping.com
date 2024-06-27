@@ -25,7 +25,7 @@ type Dates = {
 const HOURS = 60 * 60 * 1000;
 
 const CurrentLocation = ({ schedule }: { schedule: Dates[]}) => {
-	const currentDate = new Date(Date.now() - 4 * HOURS);
+	const currentDate = new Date(Date.now() - 7 * HOURS);
 
 	const currentLocation = schedule.find(({ date }) => {
 		return date.getUTCDate() === currentDate.getUTCDate() && date.getUTCMonth() === currentDate.getUTCMonth();
