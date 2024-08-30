@@ -66,65 +66,85 @@ const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping
 
 ---
 <Layout title="Schedule" frontmatter={{ title: '', content: { links } }}>
+  <div class="map-wrapper">
 
-
-<!-- <Card title="Group Run" featured>
-<strong>Stanley Park - Vancouver, BC</strong>
-<strong>Saturday, July 6 @ 8:00PM</strong>
-<p>
-  Come out and join me for my last 5k of the day in Vancouver, everyone is welcome! Meet at the Brockton playing fields.
-</p>
-</Card> -->
-
-<Video url="https://www.youtube.com/embed/EknTQhw2_dw?si=LbH_eGaIWO8Cm8D5" />
-<!-- <CurrentLocation client:load schedule={schedule} /> -->
-
+    <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=170SzhXeZrswCHH2bN_bkPN0Aj4n1wY4&ehbc=2E312F&noprof=1"></iframe>
+  </div>
+  <div class="two-col">
 <Card>
-  <Image src={tshirtImage} alt="Coast to coast black t-shirt" style="width: min(75%, 300px); height: auto; margin: auto" />
-  <p style="font-style: italic; font-size: 0.8rem">
-    80% of the proceeds will go to the Heart & Stroke Foundation and 20% will help support my run.
-  </p>
-  <ButtonLink href='https://eastcoastlifestyle.com/collections/coast-to-coast-tees' color='rgb(var(--accent))' textColor='#fff' external>
-    Order a T-Shirt!
-  </ButtonLink>
-</Card>
+  <h2>PEI Tip 2 Tip in 46 hours</h2>
+<p>
 
-<ProgressCard
-  title="Support My Cross-Canada Run"
-  icon={{ src: GoFundMeLogo, alt: "Go Fund Me" } as any}
-  progress={{
-    current: 251_346,
-    total: 250_000,
-    unit: "CAD"
-  }}
-  cta="Donate Now"
-  href='https://www.gofundme.com/f/ryans-crosscanada-run'
-  color="#02A95C"
->
-<p>
-  On April 1st I started running across Canada raising money for the <strong>Heart & Stroke Foundation</strong>.
+  This year, I ran across Canada in 99 days and raised $286,000 for the Heart & Stroke Foundation. 
 </p>
 <p>
-  Help fund my run and support a great cause. 🇨🇦 🏃🏼
+
+  PEI was the only province left out of my run due to scheduling limitations. Now, a few months later, <b>I will be running the entire length of PEI on the Confederation Trail on September 2nd, 2024.</b>
 </p>
+<p>
+
+  The goal of this run is to set the new FKT (Fastest Known Time). <b>The current record, held by Jeremy Bradford, is 46 hours and 26 minutes</b>.
+</p>
+<p>
+
+  I expect this run to cost approximately $2,500, including funds for food, gas, bridge fare, and lodging.
+</p>
+<p>
+
+  This GoFundMe is not associated with any charity - all donations will be used to make this run a possibility. If you are able and willing to donate, any help would be much appreciated.
+</p>
+<ButtonLink   color="#02A95C" textColor='#fff' href='https://www.gofundme.com/f/pei-tip-2-tip-the-final-province-274km'>Donate</ButtonLink>
+<ButtonLink color='#FC6100' textColor='#fff' href='https://www.strava.com/athletes/52922322'>Follow me on Strava</ButtonLink>
 </ProgressCard>
-<ProgressCard
-  title="Total Distance"
-  icon={{ src: StravaLogo, alt: "Strava" } as any}
-  progress={{
-    current: 7_342,
-    total: 7_342,
-    unit: "kilometers"
-  }}
-  cta="Follow my progress"
-  href='https://www.strava.com/athletes/52922322'
-  color="#FC6100"
->
-<p>
-  I'm running 75KM every day for 99 days, making my way from St John's, NL to Victoria, BC.
-</p>
-<p>
-  Follow my runs on Strava!
-</p>
-</ProgressCard>
+
+<div class="gfm-embed" data-url="https://www.gofundme.com/f/pei-tip-2-tip-the-final-province-274km/widget/large?sharesheet=fundraiser sidebar&attribution_id=undefined"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+</div>
 </Layout>
+
+<style>
+  .two-col {
+    align-items: start;
+    align-content: start;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .gfm-embed {
+mix-blend-mode: multiply;
+@media (max-width: 600px) {
+grid-row: 1;
+}
+  }
+
+  .map-wrapper {
+    overflow:hidden;
+    padding-bottom:60%;
+    position:relative;
+    height:0;
+    background: #f5f5f5;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);
+    @media (max-width: 700px){
+      padding-bottom: 80%;
+    }
+    @media (max-width: 500px){
+      padding-bottom: 100%;
+    }
+  }
+
+  .map {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border: 0;
+    
+  }
+</style>
