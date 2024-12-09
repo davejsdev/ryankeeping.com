@@ -1,138 +1,146 @@
 ---
 import Logo from "../assets/rk-logo.svg?raw";
+import ButtonLink from "./ButtonLink";
+import Button from "./ButtonLink.astro";
 
 const currentPage = Astro.props.path;
-
 ---
+
 <nav>
-    <div>
-        <a href="/" class="home-link">
-            <i class="logo" set:html={Logo} />
-            <div class="nav-title">
-                Ryan Keeping
-                <span class="subtitle">
-                    Flip the switch!
-                </span>
-            </div>
-        </a>
-    </div>
-    <ul class="nav-menu">
-        <!-- <li>
+  <div>
+    <a href="/" class="home-link">
+      <i class="logo" set:html={Logo} />
+      <div class="nav-title">
+        Ryan Keeping
+        <span class="subtitle"> Flip the switch! </span>
+      </div>
+    </a>
+  </div>
+  <ul class="nav-menu">
+    <!-- <li>
             <a href="/about" class="nav-link" aria-current={currentPage === '/about' ? 'page' : undefined}>
                 About
             </a>
       
             </a>
         </li> -->
-        <li>
+    <!-- <li>
             <a href="/vlogs" class="nav-link" aria-current={currentPage === '/vlogs' ? 'page' : undefined}>
   
 
                     Vlogs
       
             </a>
-        </li>
-        <!-- <li>
+        </li> -->
+    <!-- <li>
             <a href="/route" class="nav-link" aria-current={currentPage === '/route' ? 'page' : undefined}>
    
                     Route
       
             </a>
         </li> -->
-    </ul>
+    <li>
+      <ButtonLink
+        href="https://www.gofundme.com/f/ho-ho-250k-im-running-250km-dressed-as-santa"
+        color="#02A95C"
+        textColor="#fff"
+        size="small"
+        variant="nav"
+        external>Donate!</ButtonLink
+      >
+    </li>
+  </ul>
 </nav>
 
 <style>
-    nav {
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #f5f5f5ee;
-        box-shadow: 0 0 1rem #0002;
-        backdrop-filter: blur(2px);
-        padding: 0 0.75rem;
-        border-top: 5px solid rgb(var(--accent));
+  nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5ee;
+    box-shadow: 0 0 1rem #0002;
+    backdrop-filter: blur(2px);
+    padding: 0 0.75rem;
+    border-top: 5px solid rgb(var(--accent));
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+
+    padding: 1.25rem 0.5rem;
+    &::after {
+      content: "";
+      display: block;
+      width: calc(100% - 1rem);
+      height: 2px;
+      margin-top: 1px;
+      background: rgb(var(--accent));
+      transition: transform 0.3s;
+      position: absolute;
+      transform: scaleX(0);
     }
 
-    
-    .nav-menu {
-        display: flex;
-		list-style: none;
-		padding: 0;
-        margin: 0;
-	}
-
-	.nav-link {
-		font-weight: 600;
-		font-size: 0.75rem;
-		text-align: center;
-		color: inherit;
-		text-decoration: none;
-		display: block;
-		transition: background-color 0.2s ease-in-out;
-        text-transform: uppercase;
-        position: relative;
-        
-       
-        padding: 1.25rem 0.5rem;
-        &::after {
-            content: '';
-            display: block;
-            width: calc(100% - 1rem);
-            height: 2px;
-            margin-top: 1px;
-            background: rgb(var(--accent));
-            transition: transform 0.3s;
-            position: absolute;
-            transform: scaleX(0);
-        }
-        
-		&:focus {
-            outline: none
-		}
-        
-		&:hover::after, &:focus::after, &[aria-current='page']::after {
-            transform: scaleX(1);
-		}
-
-	}
-
-    .home-link {
-        text-align: center;
-		color: inherit;
-		text-decoration: none;
-		display: flex;
-        gap: 0.6rem;
-        align-items: center;
-
-        font-weight: 700;
-        letter-spacing: 0.05em;
-
-        padding: 0 0.5rem;
-        line-height: 1;
+    &:focus {
+      outline: none;
     }
 
-.logo {
+    &:hover::after,
+    &:focus::after,
+    &[aria-current="page"]::after {
+      transform: scaleX(1);
+    }
+  }
+
+  .home-link {
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    padding: 0 0.5rem;
+    line-height: 1;
+  }
+
+  .logo {
     display: grid;
     place-items: center;
     height: 2.5rem;
     width: 2.5rem;
     margin-bottom: -0.35rem;
-
-}
-.nav-title {
+  }
+  .nav-title {
     display: grid;
     text-transform: uppercase;
     gap: 0.25rem;
     justify-items: start;
     font-size: 0.8rem;
-}
-.subtitle {
+  }
+  .subtitle {
     background-color: rgb(var(--accent));
     font-size: 0.4rem;
     text-align: left;
@@ -143,5 +151,5 @@ const currentPage = Astro.props.path;
     line-height: 1.2;
     font-style: italic;
     border-radius: 2px;
-}
+  }
 </style>

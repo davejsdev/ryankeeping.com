@@ -1,103 +1,120 @@
 ---
-import path from 'path';
-import { readFileSync } from 'fs';
+import path from "path";
+import { readFileSync } from "fs";
 
-import Layout from '../layouts/Layout.astro';
-import ProgressCard from '../components/ProgressCard.astro';
-import Video from '../components/Video.astro';
-import GoFundMeLogo from '../assets/gofundme-logo.svg';
-import StravaLogo from '../assets/strava-logo.svg';
-import CurrentLocation from '../components/CurrentLocation.tsx';
-import Papa from 'papaparse';
-import Card from '../components/Card';
-import { Image } from 'astro:assets';
+import Layout from "../layouts/Layout.astro";
 
-import tshirtImage from '../assets/tshirt.webp';
-import ButtonLink from '../components/ButtonLink';
+import Papa from "papaparse";
+import Card from "../components/Card";
 
-const csvFilePath = path.resolve('./src/content/schedule.csv');
-const csvFileContent = readFileSync(csvFilePath, 'utf8');
+import ButtonLink from "../components/ButtonLink";
+import Snow from "../components/Snow.astro";
 
+const csvFilePath = path.resolve("./src/content/schedule.csv");
+const csvFileContent = readFileSync(csvFilePath, "utf8");
 
-    const links = [
-      {
-        title: 'Instagram',
-        url: 'https://www.instagram.com/ryan.keeping/',
-        icon: 'instagram-logo.svg'
-      },
-      {
-        title: 'YouTube',
-        url: 'https://www.youtube.com/@ryan.keeping',
-        icon: 'youtube-logo.svg'
-      },
-      {
-        title: 'TikTok',
-        url: 'https://www.tiktok.com/@ryankeeping',
-        icon: 'tiktok-logo.svg'
-      },
-      {
-        title: 'Facebook',
-        url: 'https://www.facebook.com/profile.php?id=100086981121661',
-        icon: 'facebook-logo.svg'
-      }
-    ];
-
-type Dates = {
-    day: string;
-    date: Date;
-    distance: number;
-    start: string;
-    startProvince: string;
-    end: string;
-    endProvince: string;
-    description?: string;
-    accomodations?: string;
-};
-
-const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping: true,  
-    transform: (value, field) => {
-    if (field === 'date') {
-      return new Date(value);
-    }
-    return value;
-  }, 
-}).data;
-
-
+const links = [
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/ryan.keeping/",
+    icon: "instagram-logo.svg",
+  },
+  {
+    title: "YouTube",
+    url: "https://www.youtube.com/@ryan.keeping",
+    icon: "youtube-logo.svg",
+  },
+  {
+    title: "TikTok",
+    url: "https://www.tiktok.com/@ryankeeping",
+    icon: "tiktok-logo.svg",
+  },
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=100086981121661",
+    icon: "facebook-logo.svg",
+  },
+];
 ---
-<Layout title="Schedule" frontmatter={{ title: '', content: { links } }}>
-  <div class="map-wrapper">
 
+<Layout title="Schedule" frontmatter={{ title: "", content: { links } }}>
+  <Snow />
+  <!-- <div class="map-wrapper">
     <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=170SzhXeZrswCHH2bN_bkPN0Aj4n1wY4&ehbc=2E312F&noprof=1"></iframe>
-  </div>
+  </div> -->
+  <img
+    src="/ryan-keeping-santa.webp"
+    alt="HO HO 250K - I'm running 250KM dressed as Santa"
+    class="banner"
+  />
   <div class="two-col">
-<Card>
-  <div style="display: grid; gap: 0.7rem">
+    <Card>
+      <div style="display: grid; gap: 0.7rem">
+        <h2>HO HO 250K - I'm running 250KM dressed as Santa</h2>
+        <p>
+          My name is Ryan Keeping, and I'm an ultra marathon runner from Nova
+          Scotia who is passionate about running and helping others. This
+          holiday season, I am combining my passions with the aim of bringing
+          some Christmas cheer to families in need.
+        </p>
+        <p>
+          To achieve this, I am hosting a fundraiser run, during which I will be
+          running laps around the Halifax Commons until I reach my goal distance
+          of 250km. The event will take place December 21st, starting at 6:00
+          am.
+        </p>
+        <p>
+          The majority of the proceeds from your donations (90%) will go to the
+          Ronald McDonald House Atlantic. This organization aims to make
+          families feel at home, even when they can't be - and although there's
+          no place like home for the holidays, your donation can go a long way
+          in helping families have a Merry Christmas as they receive the care
+          they need. The other 10% of donations will be used to fund the event.
+        </p>
+        <p>
+          If you are able, please consider making a donation to help me reach my
+          goal of raising $10,000 for this charity.
+        </p>
+        <p>
+          If you're not in a position to donate, there are other ways you can
+          help! Come join me at the Commons for a few laps, or share the content
+          I will be creating to promote the event on your social media.
+        </p>
+        <p>
+          Thank you to everyone for your support as I take on this goal to
+          ensure every child receives a gift this holiday season.
+        </p>
 
-    <h2>PEI Tip 2 Tip in 46 hours</h2>
-    <p>
-      This year, I ran across Canada in 99 days and raised $286,000 for the Heart & Stroke Foundation. 
-    </p>
-    <p>
-      PEI was the only province left out of my run due to scheduling limitations. Now, a few months later, <b>I will be running the entire length of PEI on the Confederation Trail from Elmira to Tignish, starting Monday, September 2nd, 2024 at 8:00 AM.</b>
-    </p>
-    <p>
-      The goal of this run is to set the new FKT (Fastest Known Time). <b>The current record, held by Jeremy Bradford, is 46 hours and 26 minutes</b>.
-    </p>
-    <p>
-      I expect this run to cost approximately $2,500, including funds for food, gas, bridge fare, and lodging.
-    </p>
-    <p>
-      
-      This GoFundMe is not associated with any charity - all donations will be used to make this run a possibility. If you are able and willing to donate, any help would be much appreciated.
-    </p>
+        <p>Flip the switch!</p>
+        <p>Ryan</p>
+
+        <img
+          src="/rmhc.webp"
+          alt="Ronald McDonald House Charities, Atlantic"
+          style="width: 100%; max-width: 350px; height: auto; margin: 0 auto;"
+        />
+      </div>
+      <ButtonLink
+        color="#02A95C"
+        textColor="#fff"
+        href="https://www.gofundme.com/f/ho-ho-250k-im-running-250km-dressed-as-santa"
+        >Donate!</ButtonLink
+      >
+      <ButtonLink
+        color="#FC6100"
+        textColor="#fff"
+        href="https://www.strava.com/athletes/52922322"
+        >Follow me on Strava</ButtonLink
+      >
+    </Card>
+
+    <div
+      class="gfm-embed"
+      data-url="https://www.gofundme.com/f/ho-ho-250k-im-running-250km-dressed-as-santa/widget/large?sharesheet=fundraiser sidebar&attribution_id=undefined"
+    >
+    </div><script defer src="https://www.gofundme.com/static/js/embed.js"
+    ></script>
   </div>
-    <ButtonLink   color="#02A95C" textColor='#fff' href='https://www.gofundme.com/f/pei-tip-2-tip-the-final-province-274km'>Support my run</ButtonLink>
-    <ButtonLink color='#FC6100' textColor='#fff' href='https://www.strava.com/athletes/52922322'>Follow me on Strava</ButtonLink>
-</ProgressCard>
-
-<div class="gfm-embed" data-url="https://www.gofundme.com/f/pei-tip-2-tip-the-final-province-274km/widget/large?sharesheet=fundraiser sidebar&attribution_id=undefined"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-</div>
 </Layout>
 
 <style>
@@ -109,39 +126,60 @@ const schedule = Papa.parse<Dates>(csvFileContent, { header: true, dynamicTyping
     grid-template-columns: 1fr auto;
     gap: 2rem;
 
-    @media (max-width: 600px) {
+    > * {
+      position: sticky;
+      top: 5rem;
+    }
+
+    @media (max-width: 700px) {
       grid-template-columns: 1fr;
+
+      > * {
+        top: 0;
+        position: relative;
+      }
     }
   }
 
   .gfm-embed {
-mix-blend-mode: multiply;
-
+    /* mix-blend-mode: multiply; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: none;
+    padding-bottom: 0%;
   }
 
   .map-wrapper {
-    overflow:hidden;
-    padding-bottom:60%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 0;
     background: #f5f5f5;
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);
-    @media (max-width: 700px){
+    @media (max-width: 700px) {
       padding-bottom: 80%;
     }
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
       padding-bottom: 100%;
     }
   }
 
   .map {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     border: 0;
-    
+  }
+
+  .banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(var(--text-color), 0.2);
   }
 </style>
